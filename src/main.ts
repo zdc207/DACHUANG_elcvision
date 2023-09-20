@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-20 09:49:43
+ * @LastEditTime: 2023-09-20 18:35:04
  * @FilePath: \power-system-visualization\src\main.ts
  * @Description:
  */
