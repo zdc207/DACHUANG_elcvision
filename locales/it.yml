@@ -1,14 +1,9 @@
-button:
-  about: Su di me
-  back: Indietro
-  go: Vai
-  home: Home
-  toggle_dark: Attiva/disattiva modalità scura
-  toggle_langs: Cambia lingua
-intro:
-  aka: Conosciuto anche come
-  desc: Modello per una Applicazione Vite
-  dynamic-route: Demo di rotta dinamica
-  hi: Ciao, {name}!
-  whats-your-name: Come ti chiami?
-not-found: Non trovato
+header:
+  change-color-dark: Passa al tema scuro
+  change-color-light: Passa al tema chiaro
+  change-language: cambiare lingua
+  exit-fullscreen: Esci dalla modalità schermo intero
+  fullscrenn: a schermo intero
+  logo: Filiale della Cina orientale della State Grid
+  title: Piattaforma di analisi visiva del sistema energetico
+not-found: pagina non trovata

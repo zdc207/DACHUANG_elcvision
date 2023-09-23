@@ -1,14 +1,9 @@
-button:
-  about: Acerca de
-  back: Atrás
-  go: Ir
-  home: Inicio
-  toggle_dark: Alternar modo oscuro
-  toggle_langs: Cambiar idiomas
-intro:
-  desc: Plantilla de Inicio de Vite Dogmática
-  dynamic-route: Demo de ruta dinámica
-  hi: ¡Hola, {name}!
-  aka: También conocido como
-  whats-your-name: ¿Cómo te llamas?
-not-found: No se ha encontrado
+header:
+  change-color-dark: Cambiar al tema oscuro
+  change-color-light: Cambiar al tema claro
+  change-language: cambiar de idioma
+  exit-fullscreen: Salir de pantalla completa
+  fullscrenn: pantalla completa
+  logo: Sucursal de State Grid en el este de China
+  title: Plataforma de análisis visual del sistema de energía.
+not-found: Página no encontrada

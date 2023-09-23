@@ -1,14 +1,9 @@
-button:
-  about: これは？
-  back: 戻る
-  go: 進む
-  home: ホーム
-  toggle_dark: ダークモード切り替え
-  toggle_langs: 言語切り替え
-intro:
-  aka: としても知られている
-  desc: 固執された Vite スターターテンプレート
-  dynamic-route: 動的ルートのデモ
-  hi: こんにちは、{name}!
-  whats-your-name: 君の名は。
-not-found: 見つかりませんでした
+header:
+  change-color-dark: ダークテーマに切り替える
+  change-color-light: ライトテーマに切り替える
+  change-language: 言語を切り替える
+  exit-fullscreen: 全画面表示を終了する
+  fullscrenn: 全画面表示
+  logo: ステートグリッド中国東部支社
+  title: 電力システムビジュアル解析プラットフォーム
+not-found: ページが見つかりません

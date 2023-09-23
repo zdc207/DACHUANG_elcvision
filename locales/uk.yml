@@ -1,14 +1,9 @@
-button:
-  about: Про шаблон
-  back: Назад
-  go: Перейти
-  home: Головна
-  toggle_dark: Переключити темний режим
-  toggle_langs: Змінити мову
-intro:
-  aka: Також відомий як
-  desc: Самостійний початковий шаблон Vite
-  dynamic-route: Демо динамічного маршруту
-  hi: Привіт, {name}!
-  whats-your-name: Як тебе звати?
-not-found: Не знайдено
+header:
+  change-color-dark: Переключитися на темну тему
+  change-color-light: Переключитися на світлу тему
+  change-language: змінити мову
+  exit-fullscreen: Вийти з повного екрана
+  fullscrenn: повноекранний
+  logo: State Grid East China Branch
+  title: Платформа візуального аналізу системи живлення
+not-found: Сторінку не знайдено

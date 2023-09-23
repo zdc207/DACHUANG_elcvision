@@ -1,14 +1,9 @@
-button:
-  about: Hakkımda
-  back: Geri
-  go: İLERİ
-  home: Anasayfa
-  toggle_dark: Karanlık modu değiştir
-  toggle_langs: Dilleri değiştir
-intro:
-  desc: Görüşlü Vite Başlangıç Şablonu
-  dynamic-route: Dinamik rota demosu
-  hi: Merhaba, {name}!
-  aka: Ayrıca şöyle bilinir
-  whats-your-name: Adınız nedir?
-not-found: Bulunamadı
+header:
+  change-color-dark: Koyu temaya geç
+  change-color-light: Açık temaya geç
+  change-language: dili değiştir
+  exit-fullscreen: Tam ekrandan çık
+  fullscrenn: Tam ekran
+  logo: Devlet Izgarası Doğu Çin Şubesi
+  title: Güç sistemi görsel analiz platformu
+not-found: sayfa bulunamadı

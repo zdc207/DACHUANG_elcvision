@@ -1,14 +1,9 @@
-button:
-  about: حول
-  back: رجوع
-  go: تجربة
-  home: الرئيسية
-  toggle_dark: التغيير إلى الوضع المظلم
-  toggle_langs: تغيير اللغة
-intro:
-  aka: معروف أيضا تحت مسمى
-  desc: vite مثال لتطبيق
-  dynamic-route: عرض لتوجيهات ديناميكية
-  hi: مرحبا {name}!
-  whats-your-name: ما إسمك؟
-not-found: صفحة غير موجودة
+header:
+  change-color-dark: التبديل إلى المظهر الداكن
+  change-color-light: التبديل إلى موضوع الضوء
+  change-language: تبديل اللغة
+  exit-fullscreen: الخروج من الشاشة الكاملة
+  fullscrenn: تكبير الشاشة
+  logo: شبكة الدولة فرع شرق الصين
+  title: منصة التحليل البصري لنظام الطاقة
+not-found: الصفحة غير موجودة

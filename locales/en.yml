@@ -1,14 +1,9 @@
-button:
-  about: About
-  back: Back
-  go: GO
-  home: Home
-  toggle_dark: Toggle dark mode
-  toggle_langs: Change languages
-intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
-not-found: Not found
+header:
+  change-color-dark: Switch to dark theme
+  change-color-light: Switch to light theme
+  change-language: switch language
+  exit-fullscreen: Exit Full Screen
+  fullscrenn: full screen
+  logo: State Grid East China Branch
+  title: Power system visual analysis platform
+not-found: Page not found

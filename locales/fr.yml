@@ -1,14 +1,9 @@
-button:
-  about: À propos
-  back: Retour
-  go: Essayer
-  home: Accueil
-  toggle_dark: Basculer en mode sombre
-  toggle_langs: Changer de langue
-intro:
-  desc: Exemple d'application Vite
-  dynamic-route: Démo de route dynamique
-  hi: Salut, {name}!
-  aka: Aussi connu sous le nom de
-  whats-your-name: Comment t'appelles-tu ?
+header:
+  change-color-dark: Passer au thème sombre
+  change-color-light: Passer au thème clair
+  change-language: changer de langue
+  exit-fullscreen: Quitter le mode plein écran
+  fullscrenn: plein écran
+  logo: Branche de State Grid en Chine orientale
+  title: Plateforme d'analyse visuelle du système électrique
 not-found: Page non trouvée

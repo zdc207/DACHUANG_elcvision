@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-20 18:35:04
+ * @LastEditTime: 2023-09-22 20:37:14
  * @FilePath: \power-system-visualization\src\main.ts
  * @Description:
  */
@@ -15,18 +15,21 @@
  * @Description:
  */
 
-import App from './App.vue'
-import type { IMoudule } from './types'
+import type { App } from 'vue'
+import appVue from './App.vue'
 
 import '@unocss/reset/tailwind.css'
-import './styles/main.css'
+import './styles/index.scss'
 import 'uno.css'
-import 'element-plus/theme-chalk/dark/css-vars.css'
+import type { IMoudule } from '#/type'
 
-const app = createApp(App)
+const app = createApp(appVue)
 
-Object.values(import.meta.glob<{ install: IMoudule }>('./modules/*.ts', { eager: true }))
-  .forEach(i =>
-    i.install?.(app),
-  )
+installModule(app)
+
 app.mount('#app')
+
+function installModule(app: App) {
+  Object.values(import.meta.glob<{ install: IMoudule }>('./modules/*.ts', { eager: true }))
+    .forEach(i => i.install?.(app))
+}

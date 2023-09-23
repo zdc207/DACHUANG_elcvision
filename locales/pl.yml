@@ -1,14 +1,9 @@
-button:
-  about: O nas
-  back: Wróć
-  go: WEJDŹ
-  home: Strona główna
-  toggle_dark: Ustaw tryb nocny
-  toggle_langs: Zmień język
-intro:
-  desc: Opiniowany szablon startowy Vite
-  dynamic-route: Demonstracja dynamicznego route
-  hi: Cześć, {name}!
-  aka: Znany też jako
-  whats-your-name: Jak masz na imię?
-not-found: Nie znaleziono
+header:
+  change-color-dark: Przełącz na ciemny motyw
+  change-color-light: Przełącz na jasny motyw
+  change-language: zmień język
+  exit-fullscreen: Wyłączyć tryb pełnoekranowy
+  fullscrenn: pełny ekran
+  logo: Oddział State Grid we wschodnich Chinach
+  title: Platforma analizy wizualnej systemu elektroenergetycznego
+not-found: Strona nie znaleziona

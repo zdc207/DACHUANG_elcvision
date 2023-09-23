@@ -24,7 +24,8 @@
       "element-plus/global"
     ],
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "#/*": ["types/*"]
     }
   },
   "vueCompilerOptions": {
@@ -33,5 +34,15 @@
       "@vue-macros/volar/define-slots"
     ]
   },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "mock/**/*.ts",
+    "vite.config.ts"
+  ],
   "exclude": ["dist", "node_modules"]
 }

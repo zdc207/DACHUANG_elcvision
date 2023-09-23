@@ -4,6 +4,8 @@
     "@unocss"
   ],
   "rules": {
-    "no-console":"off"
+    "no-console":"off",
+    "sort-imports":"off",
+    "--no-ignore":"off"
   }
 }

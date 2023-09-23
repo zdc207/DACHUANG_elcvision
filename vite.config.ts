@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-20 10:07:15
+ * @LastEditTime: 2023-09-22 20:00:04
  * @FilePath: \power-system-visualization\vite.config.ts
  * @Description:
  */
@@ -29,9 +29,16 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
+      '#/': `${path.resolve(__dirname, 'types')}/`,
     },
   },
-
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "~/styles/element/index.scss" as *;',
+      },
+    },
+  },
   plugins: [
     VueMacros({
       plugins: {
@@ -57,14 +64,20 @@ export default defineConfig({
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
+        'pinia',
       ],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'types/auto-imports.d.ts',
       dirs: [
-        'src/composables',
-        'src/stores',
-        'src/modules',
-        'src/utils',
-        'src/api',
+        'src/stores/**',
+        'src/modules/**',
+        'src/composables/**',
+        'src/store/**',
+        'src/api/**',
+        'src/utils/**',
+        'src/components/**',
+        'src/constants/**',
+        'src/types/**',
+        'src/enums/**',
       ],
       vueTemplate: true,
       resolvers: [ElementPlusResolver()],
@@ -75,8 +88,17 @@ export default defineConfig({
       extensions: ['vue'],
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/],
-      dts: 'src/components.d.ts',
-      resolvers: [ElementPlusResolver()],
+      dts: 'types/components.d.ts',
+      resolvers: [ElementPlusResolver({
+        importStyle: 'sass',
+      }), (componentName) => {
+        if (componentName.startsWith('Dv')) {
+          console.log(componentName, 'componentName')
+          return { name: componentName.slice(2), from: '@kjgl77/datav-vue3' }
+        }
+      },
+      ],
+      dirs: ['src/components', 'src/pages/**'],
     }),
 
     // https://github.com/antfu/unocss
@@ -100,5 +122,6 @@ export default defineConfig({
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
+
   ],
 })

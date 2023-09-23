@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-20 11:11:08
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-20 12:38:25
+ * @LastEditTime: 2023-09-23 12:15:37
  * @FilePath: \power-system-visualization\src\components\app-lang-select\app-lang-select.vue
  * @Description:
 -->
@@ -14,8 +14,8 @@ function handleCommand(command: string) {
 
 <template>
   <el-dropdown @command="handleCommand">
-    <div class="center w-10">
-      <div class="i-carbon-language" />
+    <div class="w-10 center">
+      <div class="i-carbon-language h-30px w-30px text" />
     </div>
     <template #dropdown>
       <el-dropdown-menu v-for="lang in languages" :key="lang.value">
