@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-25 13:44:07
+ * @LastEditTime: 2023-09-25 13:48:20
  * @FilePath: \power-system-visualization\vite.config.ts
  * @Description:
  */
@@ -125,7 +125,7 @@ export default defineConfig({
     VueDevTools(),
     viteMockServe({
       mockPath: 'mock',
-      localEnabled: true,
+      prodEnabled: true,
     }),
   ],
 })
