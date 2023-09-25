@@ -7,12 +7,8 @@
  * @Description:
  */
 import { createPinia } from 'pinia'
-import type { App } from 'vue'
-import type { IMoudule } from '#/type'
 
 // Setup Pinia
 // https://pinia.vuejs.org/
-export const install: IMoudule = (app: App) => {
-  const pinia = createPinia()
-  app.use(pinia)
-}
+const pinia = createPinia()
+export default pinia

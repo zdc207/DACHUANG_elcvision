@@ -1,3 +1,10 @@
+container:
+  title-1: warunki socjalne
+  title-2: Budowa sieci energetycznej
+  title-3: Zużycie energii elektrycznej
+  title-4: Doskonalenie zarządzania
+  title-5: Niezawodność sieci
+  title-6: Sprzedaż energii elektrycznej i straty w liniach
 header:
   change-color-dark: Przełącz na ciemny motyw
   change-color-light: Przełącz na jasny motyw
@@ -7,3 +14,11 @@ header:
   logo: Oddział State Grid we wschodnich Chinach
   title: Platforma analizy wizualnej systemu elektroenergetycznego
 not-found: Strona nie znaleziona
+social-condition:
+  first-industry: przemysł pierwotny
+  second-industry: Przemysł wtórny
+  third-industry: Przemysł trzeci
+  title-1: Wielkość przewozu ładunków koleją (10 000 ton)
+  title-2: Bankowe pożyczki średnio- i długoterminowe (100 milionów juanów)
+  title-3: Zużycie energii (10 000 kilowatogodzin)
+  title-4: produkt krajowy brutto

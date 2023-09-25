@@ -1,3 +1,10 @@
+container:
+  title-1: 社会情勢
+  title-2: 電力網の建設
+  title-3: 電気使用量
+  title-4: 経営改善
+  title-5: 系統の信頼性
+  title-6: 売電と送電損失
 header:
   change-color-dark: ダークテーマに切り替える
   change-color-light: ライトテーマに切り替える
@@ -7,3 +14,11 @@ header:
   logo: ステートグリッド中国東部支社
   title: 電力システムビジュアル解析プラットフォーム
 not-found: ページが見つかりません
+social-condition:
+  first-industry: 第一次産業
+  second-industry: 第二次産業
+  third-industry: 第三次産業
+  title-1: 鉄道貨物輸送量（万トン）
+  title-2: 銀行中長期融資（1億元）
+  title-3: 消費電力（10,000キロワット時）
+  title-4: 国内総生産

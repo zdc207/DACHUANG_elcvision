@@ -1,3 +1,10 @@
+container:
+  title-1: soziale Umstände
+  title-2: Stromnetzbau
+  title-3: Stromverbrauch
+  title-4: Verbesserung des Managements
+  title-5: Netzzuverlässigkeit
+  title-6: Verkauf von Strom und Leitungsverlusten
 header:
   change-color-dark: Wechseln Sie zum dunklen Thema
   change-color-light: Wechseln Sie zum Lichtthema
@@ -7,3 +14,11 @@ header:
   logo: Niederlassung von State Grid East China
   title: Visuelle Analyseplattform für Stromversorgungssysteme
 not-found: Seite nicht gefunden
+social-condition:
+  first-industry: Grundstoffindustrie
+  second-industry: Sekundärindustrie
+  third-industry: Tertiäre Industrie
+  title-1: Transportvolumen des Schienengüterverkehrs (10.000 Tonnen)
+  title-2: Mittel- und langfristige Bankkredite (100 Millionen Yuan)
+  title-3: Stromverbrauch (10.000 Kilowattstunden)
+  title-4: Bruttoinlandsprodukt

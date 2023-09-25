@@ -1,3 +1,10 @@
+container:
+  title-1: kondisi sosial
+  title-2: Konstruksi jaringan listrik
+  title-3: Penggunaan listrik
+  title-4: Perbaikan manajemen
+  title-5: Keandalan jaringan
+  title-6: Penjualan listrik dan kehilangan saluran
 header:
   change-color-dark: Beralih ke tema gelap
   change-color-light: Beralih ke tema terang
@@ -7,3 +14,11 @@ header:
   logo: Jaringan Negara Cabang Tiongkok Timur
   title: Platform analisis visual sistem tenaga
 not-found: halaman tidak ditemukan
+social-condition:
+  first-industry: industri utama
+  second-industry: Industri sekunder
+  third-industry: Industri Tersier
+  title-1: Volume angkutan kargo kereta api (10.000 ton)
+  title-2: Pinjaman bank jangka menengah dan panjang (100 juta yuan)
+  title-3: Konsumsi daya (10.000 kilowatt-jam)
+  title-4: produk domestik bruto

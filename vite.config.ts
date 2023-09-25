@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-22 20:00:04
+ * @LastEditTime: 2023-09-25 11:25:03
  * @FilePath: \power-system-visualization\vite.config.ts
  * @Description:
  */
@@ -24,6 +24,9 @@ import WebfontDownload from 'vite-plugin-webfont-dl'
 
 // element-plus
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+// mock
+import { viteMockServe } from 'vite-plugin-mock'
 
 export default defineConfig({
   resolve: {
@@ -92,10 +95,8 @@ export default defineConfig({
       resolvers: [ElementPlusResolver({
         importStyle: 'sass',
       }), (componentName) => {
-        if (componentName.startsWith('Dv')) {
-          console.log(componentName, 'componentName')
+        if (componentName.startsWith('Dv'))
           return { name: componentName.slice(2), from: '@kjgl77/datav-vue3' }
-        }
       },
       ],
       dirs: ['src/components', 'src/pages/**'],
@@ -122,6 +123,8 @@ export default defineConfig({
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
-
+    viteMockServe({
+      mockPath: 'mock',
+    }),
   ],
 })

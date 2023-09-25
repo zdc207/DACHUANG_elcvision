@@ -1,3 +1,10 @@
+container:
+  title-1: social conditions
+  title-2: Power grid construction
+  title-3: Electricity usage
+  title-4: Management improvement
+  title-5: Grid reliability
+  title-6: Sales of electricity and line loss
 header:
   change-color-dark: Switch to dark theme
   change-color-light: Switch to light theme
@@ -7,3 +14,11 @@ header:
   logo: State Grid East China Branch
   title: Power system visual analysis platform
 not-found: Page not found
+social-condition:
+  first-industry: primary industry
+  second-industry: Secondary industry
+  third-industry: Tertiary Industry
+  title-1: Railway cargo transportation volume (10,000 tons)
+  title-2: Bank medium and long-term loans (100 million yuan)
+  title-3: Power consumption (10,000 kilowatt hours)
+  title-4: gross domestic product

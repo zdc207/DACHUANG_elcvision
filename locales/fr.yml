@@ -1,3 +1,10 @@
+container:
+  title-1: conditions sociales
+  title-2: Construction de réseau électrique
+  title-3: Consommation d'électricité
+  title-4: Amélioration de la gestion
+  title-5: Fiabilité du réseau
+  title-6: Ventes d'électricité et perte de ligne
 header:
   change-color-dark: Passer au thème sombre
   change-color-light: Passer au thème clair
@@ -7,3 +14,11 @@ header:
   logo: Branche de State Grid en Chine orientale
   title: Plateforme d'analyse visuelle du système électrique
 not-found: Page non trouvée
+social-condition:
+  first-industry: industrie primaire
+  second-industry: Industrie secondaire
+  third-industry: Industrie tertiaire
+  title-1: Volume de transport de marchandises ferroviaires (10 000 tonnes)
+  title-2: Prêts bancaires à moyen et long terme (100 millions de yuans)
+  title-3: Consommation d'énergie (10 000 kilowattheures)
+  title-4: produit intérieur brut

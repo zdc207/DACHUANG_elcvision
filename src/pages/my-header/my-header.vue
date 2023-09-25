@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-22 17:37:25
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-23 17:54:14
+ * @LastEditTime: 2023-09-23 19:14:34
  * @FilePath: \power-system-visualization\src\pages\my-header\my-header.vue
  * @Description:
 -->
@@ -22,6 +22,10 @@ const fullScreenTitle = computed(() => {
 
 const langBtnTitle = computed(() => {
   return t('header.change-language')
+})
+
+defineOptions({
+  name: 'MyHeader',
 })
 </script>
 

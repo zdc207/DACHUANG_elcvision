@@ -1,3 +1,10 @@
+container:
+  title-1: condições sociais
+  title-2: Construção da rede elétrica
+  title-3: Uso de eletricidade
+  title-4: Melhoria de gestão
+  title-5: Confiabilidade da rede
+  title-6: Vendas de eletricidade e perda de linha
 header:
   change-color-dark: Mudar para tema escuro
   change-color-light: Mudar para tema claro
@@ -7,3 +14,11 @@ header:
   logo: Filial da State Grid no Leste da China
   title: Plataforma de análise visual do sistema de energia
 not-found: página não encontrada
+social-condition:
+  first-industry: indústria primária
+  second-industry: Indústria secundária
+  third-industry: Indústria Terciária
+  title-1: Volume de transporte ferroviário de carga (10.000 toneladas)
+  title-2: Empréstimos bancários de médio e longo prazo (100 milhões de yuans)
+  title-3: Consumo de energia (10.000 quilowatts-hora)
+  title-4: produto Interno Bruto

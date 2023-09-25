@@ -18,8 +18,6 @@ watch(currentLocale, () => {
 
 <template>
   <el-config-provider :size="size" :z-index="zIndex" :locale="locale">
-    <dv-full-screen-container>
-      <RouterView />
-    </dv-full-screen-container>
+    <RouterView />
   </el-config-provider>
 </template>

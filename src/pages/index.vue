@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-23 12:57:43
+ * @LastEditTime: 2023-09-24 18:36:42
  * @FilePath: \power-system-visualization\src\pages\index.vue
  * @Description:
 -->
@@ -13,8 +13,9 @@ defineOptions({
 </script>
 
 <template>
-  <div class="h-full px-40 py-2 text">
-    <my-header />
+  <div class="h-full flex flex-col px-20 py-5 text">
+    <my-header class="relative -top-4" />
+    <my-container class="flex-1" />
   </div>
 </template>
 

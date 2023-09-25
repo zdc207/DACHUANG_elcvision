@@ -6,4 +6,19 @@ header:
   fullscrenn: 全屏
   logo: 国家电网华东分部
   title: 电力系统可视化分析平台
+container:
+  title-1: 社会状况
+  title-2: 电网建设
+  title-3: 用电情况
+  title-4: 管理提升
+  title-5: 电网可靠性
+  title-6: 售电及线损
+social-condition:
+  title-1: 铁路货物运输量(万吨)
+  title-2: 银行中长期贷款(亿元)
+  title-3: 耗电量(万千瓦时)
+  title-4: 国内生产总值
+  first-industry: 第一产业
+  second-industry: 第二产业
+  third-industry: 第三产业
 not-found: 未找到页面

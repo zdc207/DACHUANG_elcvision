@@ -7,6 +7,10 @@
  * @Description:
 -->
 <script setup lang='ts'>
+defineOptions({
+  name: 'AppLangSelect',
+})
+
 function handleCommand(command: string) {
   loadLanguageAsync(command)
 }

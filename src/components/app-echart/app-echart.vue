@@ -4,8 +4,19 @@ import { useDebounceFn } from '@vueuse/core'
 import { type EChartsType } from 'echarts/core'
 import echarts, { type ECOption } from './config'
 
+const props = withDefaults(defineProps<Props>(), {
+  theme: null,
+  loading: false,
+  width: '500px',
+  height: '400px',
+})
+
+defineOptions({
+  name: 'AppEchart',
+})
+
 interface Props {
-  option: ECOption
+  options?: ECOption
   width?: string // 必须指定容器的宽高，否则无法显示。（容器内图表会自动获取父元素宽高）
   height?: string
   theme?: Object | string | null
@@ -14,19 +25,12 @@ interface Props {
   onMouseout?: (...args: any[]) => void
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  theme: null,
-  loading: false,
-  width: '500px',
-  height: '400px',
-})
-
 const chartRef = ref<HTMLDivElement>()
 const chartInstance = ref<EChartsType>()
 
 function draw() {
-  if (chartInstance.value)
-    chartInstance.value.setOption(props.option, { notMerge: true })
+  if (chartInstance.value && props.options)
+    chartInstance.value.setOption(props.options, { notMerge: true })
 }
 
 function init() {
@@ -43,14 +47,14 @@ function init() {
     )
 
     // 绑定鼠标事件：
-    if (props.onMouseover) {
+    if (props.onMouseover && props.options) {
       chartInstance.value.on('mouseover', (event: object) => {
-        props.onMouseover?.(event, chartInstance.value, props.option)
+        props.onMouseover?.(event, chartInstance.value, props.options)
       })
     }
-    if (props.onMouseout) {
+    if (props.onMouseout && props.options) {
       chartInstance.value.on('mouseout', (event: object) => {
-        props.onMouseout?.(event, chartInstance.value, props.option)
+        props.onMouseout?.(event, chartInstance.value, props.options)
       })
     }
 

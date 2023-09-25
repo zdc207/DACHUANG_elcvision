@@ -1,3 +1,10 @@
+container:
+  title-1: sosyal durumlar
+  title-2: Güç şebekesi inşaatı
+  title-3: Elektrik kullanımı
+  title-4: Yönetim iyileştirmesi
+  title-5: Şebeke güvenilirliği
+  title-6: Elektrik satışı ve hat kaybı
 header:
   change-color-dark: Koyu temaya geç
   change-color-light: Açık temaya geç
@@ -7,3 +14,11 @@ header:
   logo: Devlet Izgarası Doğu Çin Şubesi
   title: Güç sistemi görsel analiz platformu
 not-found: sayfa bulunamadı
+social-condition:
+  first-industry: birincil sanayi
+  second-industry: İkincil sanayi
+  third-industry: Üçüncü derece endüstri
+  title-1: Demiryolu kargo taşıma hacmi (10.000 ton)
+  title-2: Bankanın orta ve uzun vadeli kredileri (100 milyon yuan)
+  title-3: Güç tüketimi (10.000 kilowatt saat)
+  title-4: gayri safi yurtiçi Hasıla

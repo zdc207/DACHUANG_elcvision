@@ -1,3 +1,10 @@
+container:
+  title-1: 세상
+  title-2: 전력망 구축
+  title-3: 전기 사용량
+  title-4: 경영개선
+  title-5: 그리드 신뢰성
+  title-6: 전력판매 및 회선손실
 header:
   change-color-dark: 어두운 테마로 전환
   change-color-light: 밝은 테마로 전환
@@ -7,3 +14,11 @@ header:
   logo: State Grid 중국 동부 지점
   title: 전력계통 시각적 분석 플랫폼
 not-found: 페이지를 찾을 수 없습니다
+social-condition:
+  first-industry: 1차 산업
+  second-industry: 2차산업
+  third-industry: 3차 산업
+  title-1: 철도화물 운송량(만톤)
+  title-2: 은행 중장기대출(1억위안)
+  title-3: 소비전력(10,000kWh)
+  title-4: 국내 총생산

@@ -1,7 +1,13 @@
-import type { App } from 'vue'
+/*
+ * @Author: Leo l024983409@qq.com
+ * @Date: 2023-09-19 20:22:55
+ * @LastEditors: Leo l024983409@qq.com
+ * @LastEditTime: 2023-09-25 11:26:04
+ * @FilePath: \power-system-visualization\src\modules\i18n.ts
+ * @Description:
+ */
 import type { Locale } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
-import type { IMoudule } from '#/type'
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
@@ -63,7 +69,5 @@ export const languages = [
   { value: 'uk', label: 'Українська' }, // 乌克兰语 (Ukrainian)
 ]
 
-export const install: IMoudule = (app: App) => {
-  app.use(i18n)
-  loadLanguageAsync('zh-CN')
-}
+loadLanguageAsync('zh-CN')
+export default i18n
