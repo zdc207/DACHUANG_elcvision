@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Key indicators of East China branch operations
 container:
   title-1: social conditions
   title-2: Power grid construction
@@ -5,6 +7,25 @@ container:
   title-4: Management improvement
   title-5: Grid reliability
   title-6: Sales of electricity and line loss
+electricity-usage:
+  desc-1: energy used
+  desc-2: growth rate
+  title-1: >-
+    Electricity consumption of the entire network this month (billion kilowatt
+    hours)
+  title-2: Electricity load this year (10,000 kilowatt hours)
+  title-3: Electricity consumption of the whole society
+fujian: Fujian
+grid-reliability:
+  title-1: Number of 1000KV line trips this month
+  title-2: Number of tripping events of 500KV system equipment
+  title-3: Trip times of 300MW and above
+  title-4: Equipment and unit tripping
+  title-5: Unit tripped
+  title-6: Equipment adjustment
+  unit-1: Second-rate
+  unit-2: rise
+  unit-3: Taiwan number
 header:
   change-color-dark: Switch to dark theme
   change-color-light: Switch to light theme
@@ -13,7 +34,24 @@ header:
   fullscrenn: full screen
   logo: State Grid East China Branch
   title: Power system visual analysis platform
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Budget implementation status (10,000 yuan)
+  title-2: Operation and maintenance expenses this month (10,000 yuan)
+  title-3: availability
 not-found: Page not found
+power-grid-construction:
+  title-1: 500KV line length (km)
+  title-2: 500KV transformer power (10,000 volt-amperes)
+  title-3: Completed status of fixed asset investment
+sales-of-electricity-and-line-loss:
+  desc-1: Network loss rate
+  desc-2: growth rate
+  title-1: State Grid plans to sell electricity in East China this year
+  title-2: Electricity sales across the entire network this month
+  title-3: Whole network line loss rate
+  unit-1: Thousands of kilowatt hours
+shanghai: Shanghai
 social-condition:
   first-industry: primary industry
   second-industry: Secondary industry
@@ -22,3 +60,4 @@ social-condition:
   title-2: Bank medium and long-term loans (100 million yuan)
   title-3: Power consumption (10,000 kilowatt hours)
   title-4: gross domestic product
+zhejiang: Zhejiang

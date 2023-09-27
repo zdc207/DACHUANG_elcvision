@@ -21,4 +21,42 @@ social-condition:
   first-industry: 第一产业
   second-industry: 第二产业
   third-industry: 第三产业
+power-grid-construction:
+  title-1: 500KV线路长度(公里)
+  title-2: 500KV变电功率(万千伏安)
+  title-3: 固定资产投资完成情况
+
+electricity-usage:
+  title-1: 本月全网用电量(亿千瓦时)
+  title-2: 本年用电负荷(万千瓦时)
+  title-3: 全社会用电量
+  desc-1: 用电量
+  desc-2: 增长率
+management-improvement:
+  title-1: 预算执行情况(万元)
+  title-2: 本月运维费用(万元)
+  title-3: 可用率
+grid-reliability:
+  title-1: 本月1000KV线路跳闸条次
+  title-2: 500KV系统设备跳闸事件数
+  title-3: 300MW及以上跳闸次数
+  title-4: 设备及机组跳闸
+  title-5: 机组跳闸
+  title-6: 设备调整
+  unit-1: 次
+  unit-2: 起
+  unit-3: 台次 
+sales-of-electricity-and-line-loss:
+  title-1: 本年国网华东计划售电量
+  title-2: 本月全网售电量
+  title-3: 全网线损率
+  desc-1: 网损率
+  desc-2: 增长率
+  unit-1: 万千瓦时
 not-found: 未找到页面
+shanghai: 上海
+jiangsu: 江苏
+zhejiang: 浙江
+anhui: 安徽
+fujian: 福建
+center-title: 华东分部运营关键指标

@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Indicadores clave de las operaciones de las sucursales del este de China
 container:
   title-1: condiciones sociales
   title-2: Construcción de red eléctrica
@@ -5,6 +7,25 @@ container:
   title-4: Mejora de la gestión
   title-5: Fiabilidad de la red
   title-6: Ventas de electricidad y pérdidas de líneas.
+electricity-usage:
+  desc-1: energía utilizada
+  desc-2: tasa de crecimiento
+  title-1: >-
+    Consumo eléctrico de toda la red este mes (miles de millones de kilovatios
+    hora)
+  title-2: Carga eléctrica este año (10.000 kilovatios hora)
+  title-3: Consumo eléctrico de toda la sociedad.
+fujian: fujián
+grid-reliability:
+  title-1: Número de viajes de línea de 1000KV este mes
+  title-2: Número de eventos de disparo de equipos del sistema de 500 KV
+  title-3: Tiempos de viaje de 300 MW y superiores
+  title-4: Disparo de equipos y unidades
+  title-5: Unidad disparada
+  title-6: Ajuste del equipo
+  unit-1: De segunda categoría
+  unit-2: elevar
+  unit-3: número de taiwán
 header:
   change-color-dark: Cambiar al tema oscuro
   change-color-light: Cambiar al tema claro
@@ -13,7 +34,24 @@ header:
   fullscrenn: pantalla completa
   logo: Sucursal de State Grid en el este de China
   title: Plataforma de análisis visual del sistema de energía.
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Estado de ejecución del presupuesto (10.000 yuanes)
+  title-2: Gastos de operación y mantenimiento este mes (10.000 yuanes)
+  title-3: disponibilidad
 not-found: Página no encontrada
+power-grid-construction:
+  title-1: Longitud de línea de 500 KV (km)
+  title-2: Potencia del transformador de 500 KV (10.000 voltios-amperios)
+  title-3: Estado completo de la inversión en activos fijos.
+sales-of-electricity-and-line-loss:
+  desc-1: Tasa de pérdida de red
+  desc-2: tasa de crecimiento
+  title-1: State Grid planea vender electricidad en el este de China este año
+  title-2: Ventas de electricidad en toda la red este mes
+  title-3: Tasa de pérdida de línea de toda la red
+  unit-1: Miles de kilovatios hora
+shanghai: Llevar a la fuerza
 social-condition:
   first-industry: industria primaria
   second-industry: Industria secundaria
@@ -22,3 +60,4 @@ social-condition:
   title-2: Préstamos bancarios a medio y largo plazo (100 millones de yuanes)
   title-3: Consumo de energía (10.000 kilovatios hora)
   title-4: producto Interno Bruto
+zhejiang: Zhejiang

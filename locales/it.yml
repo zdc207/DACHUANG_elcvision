@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Indicatori chiave delle operazioni delle filiali della Cina orientale
 container:
   title-1: condizioni sociali
   title-2: Costruzione della rete elettrica
@@ -5,6 +7,25 @@ container:
   title-4: Miglioramento della gestione
   title-5: Affidabilità della rete
   title-6: Vendite di energia elettrica e perdita di linea
+electricity-usage:
+  desc-1: energia utilizzata
+  desc-2: tasso di crescita
+  title-1: >-
+    Consumo di elettricità dell'intera rete questo mese (miliardi di
+    kilowattora)
+  title-2: Carico di elettricità quest'anno (10.000 kilowattora)
+  title-3: Consumo di elettricità dell'intera società
+fujian: Fujian
+grid-reliability:
+  title-1: Numero di viaggi sulla linea 1000KV questo mese
+  title-2: Numero di eventi di intervento degli apparati del sistema 500KV
+  title-3: Tempi di viaggio di 300 MW e superiori
+  title-4: Intervento di apparecchiature e unità
+  title-5: L'unità è scattata
+  title-6: Regolazione dell'attrezzatura
+  unit-1: Di second'ordine
+  unit-2: salita
+  unit-3: Numero di Taiwan
 header:
   change-color-dark: Passa al tema scuro
   change-color-light: Passa al tema chiaro
@@ -13,7 +34,24 @@ header:
   fullscrenn: a schermo intero
   logo: Filiale della Cina orientale della State Grid
   title: Piattaforma di analisi visiva del sistema energetico
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Stato di attuazione del budget (10.000 yuan)
+  title-2: Spese di funzionamento e manutenzione questo mese (10.000 yuan)
+  title-3: disponibilità
 not-found: pagina non trovata
+power-grid-construction:
+  title-1: Lunghezza linea 500KV (km)
+  title-2: Potenza del trasformatore 500KV (10.000 volt-ampere)
+  title-3: Stato completato dell'investimento in immobilizzazioni
+sales-of-electricity-and-line-loss:
+  desc-1: Tasso di perdita di rete
+  desc-2: tasso di crescita
+  title-1: State Grid prevede di vendere elettricità nella Cina orientale quest’anno
+  title-2: Vendite di elettricità su tutta la rete questo mese
+  title-3: Tasso di perdita della linea dell'intera rete
+  unit-1: Migliaia di kilowattora
+shanghai: Shangai
 social-condition:
   first-industry: Industria primaria
   second-industry: Industria secondaria
@@ -22,3 +60,4 @@ social-condition:
   title-2: Prestiti bancari a medio e lungo termine (100 milioni di yuan)
   title-3: Consumo energetico (10.000 kilowattora)
   title-4: prodotto interno lordo
+zhejiang: Zhejiang

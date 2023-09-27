@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Indicateurs clés des opérations de la succursale de Chine orientale
 container:
   title-1: conditions sociales
   title-2: Construction de réseau électrique
@@ -5,6 +7,25 @@ container:
   title-4: Amélioration de la gestion
   title-5: Fiabilité du réseau
   title-6: Ventes d'électricité et perte de ligne
+electricity-usage:
+  desc-1: énergie utilisée
+  desc-2: Taux de croissance
+  title-1: >-
+    Consommation d'électricité de l'ensemble du réseau ce mois-ci (milliards de
+    kilowattheures)
+  title-2: Charge électrique cette année (10 000 kilowattheures)
+  title-3: Consommation d'électricité de l'ensemble de la société
+fujian: Fujian
+grid-reliability:
+  title-1: Nombre de déclenchements de ligne 1000KV ce mois-ci
+  title-2: Nombre d'événements de déclenchement de l'équipement du système 500KV
+  title-3: Temps de déclenchement de 300 MW et plus
+  title-4: Déclenchement des équipements et des unités
+  title-5: Unité déclenchée
+  title-6: Ajustement des équipements
+  unit-1: De second ordre
+  unit-2: augmenter
+  unit-3: Numéro de Taïwan
 header:
   change-color-dark: Passer au thème sombre
   change-color-light: Passer au thème clair
@@ -13,7 +34,26 @@ header:
   fullscrenn: plein écran
   logo: Branche de State Grid en Chine orientale
   title: Plateforme d'analyse visuelle du système électrique
+jiangsu: Jiangsu
+management-improvement:
+  title-1: État d'exécution du budget (10 000 yuans)
+  title-2: Dépenses de fonctionnement et d'entretien ce mois-ci (10 000 yuans)
+  title-3: disponibilité
 not-found: Page non trouvée
+power-grid-construction:
+  title-1: Longueur de ligne 500KV (km)
+  title-2: Puissance du transformateur 500KV (10 000 volts-ampères)
+  title-3: Statut terminé de l'investissement en immobilisations
+sales-of-electricity-and-line-loss:
+  desc-1: Taux de perte de réseau
+  desc-2: Taux de croissance
+  title-1: >-
+    State Grid prévoit de vendre de l'électricité dans l'est de la Chine cette
+    année
+  title-2: Ventes d'électricité sur l'ensemble du réseau ce mois-ci
+  title-3: Taux de perte de ligne sur l'ensemble du réseau
+  unit-1: Milliers de kilowattheures
+shanghai: Shanghai
 social-condition:
   first-industry: industrie primaire
   second-industry: Industrie secondaire
@@ -22,3 +62,4 @@ social-condition:
   title-2: Prêts bancaires à moyen et long terme (100 millions de yuans)
   title-3: Consommation d'énergie (10 000 kilowattheures)
   title-4: produit intérieur brut
+zhejiang: Zhejiang

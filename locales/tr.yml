@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Doğu Çin şube operasyonlarına ilişkin temel göstergeler
 container:
   title-1: sosyal durumlar
   title-2: Güç şebekesi inşaatı
@@ -5,6 +7,23 @@ container:
   title-4: Yönetim iyileştirmesi
   title-5: Şebeke güvenilirliği
   title-6: Elektrik satışı ve hat kaybı
+electricity-usage:
+  desc-1: kullanılan enerji
+  desc-2: büyüme oranı
+  title-1: Bu ay tüm ağın elektrik tüketimi (milyar kilowatt saat)
+  title-2: Bu yılki elektrik yükü (10.000 kilowatt saat)
+  title-3: Tüm toplumun elektrik tüketimi
+fujian: Fujian
+grid-reliability:
+  title-1: Bu ay 1000KV hat seferi sayısı
+  title-2: 500KV sistem ekipmanının açma olaylarının sayısı
+  title-3: 300MW ve üzeri yolculuk süreleri
+  title-4: Ekipman ve ünite tetiklemesi
+  title-5: Ünite tetiklendi
+  title-6: Ekipman ayarı
+  unit-1: İkinci sınıf
+  unit-2: yükselmek
+  unit-3: Tayvan numarası
 header:
   change-color-dark: Koyu temaya geç
   change-color-light: Açık temaya geç
@@ -13,7 +32,24 @@ header:
   fullscrenn: Tam ekran
   logo: Devlet Izgarası Doğu Çin Şubesi
   title: Güç sistemi görsel analiz platformu
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Bütçe uygulama durumu (10.000 yuan)
+  title-2: Bu ayki işletme ve bakım giderleri (10.000 yuan)
+  title-3: kullanılabilirlik
 not-found: sayfa bulunamadı
+power-grid-construction:
+  title-1: 500KV hat uzunluğu (km)
+  title-2: 500KV trafo gücü (10.000 volt amper)
+  title-3: Sabit kıymet yatırımının tamamlanmış durumu
+sales-of-electricity-and-line-loss:
+  desc-1: Ağ kaybı oranı
+  desc-2: büyüme oranı
+  title-1: State Grid bu yıl Doğu Çin'de elektrik satmayı planlıyor
+  title-2: Bu ay tüm şebekede elektrik satışları
+  title-3: Tüm ağ hattı kayıp oranı
+  unit-1: Binlerce kilowatt saat
+shanghai: Şangay
 social-condition:
   first-industry: birincil sanayi
   second-industry: İkincil sanayi
@@ -22,3 +58,4 @@ social-condition:
   title-2: Bankanın orta ve uzun vadeli kredileri (100 milyon yuan)
   title-3: Güç tüketimi (10.000 kilowatt saat)
   title-4: gayri safi yurtiçi Hasıla
+zhejiang: Zhejiang

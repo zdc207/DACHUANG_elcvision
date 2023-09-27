@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Schlüsselindikatoren für den Betrieb der Niederlassung in Ostchina
 container:
   title-1: soziale Umstände
   title-2: Stromnetzbau
@@ -5,6 +7,25 @@ container:
   title-4: Verbesserung des Managements
   title-5: Netzzuverlässigkeit
   title-6: Verkauf von Strom und Leitungsverlusten
+electricity-usage:
+  desc-1: Energie verbraucht
+  desc-2: Wachstumsrate
+  title-1: >-
+    Stromverbrauch des gesamten Netzes in diesem Monat (Milliarden
+    Kilowattstunden)
+  title-2: Stromlast dieses Jahr (10.000 Kilowattstunden)
+  title-3: Stromverbrauch der gesamten Gesellschaft
+fujian: Fujian
+grid-reliability:
+  title-1: Anzahl der 1000-KV-Leitungsfahrten in diesem Monat
+  title-2: Anzahl der Auslöseereignisse von 500-kV-Systemgeräten
+  title-3: Auslösezeiten von 300 MW und mehr
+  title-4: Auslösung von Geräten und Einheiten
+  title-5: Gerät hat ausgelöst
+  title-6: Anpassung der Ausrüstung
+  unit-1: Zweitklassig
+  unit-2: erheben
+  unit-3: Taiwan-Nummer
 header:
   change-color-dark: Wechseln Sie zum dunklen Thema
   change-color-light: Wechseln Sie zum Lichtthema
@@ -13,7 +34,24 @@ header:
   fullscrenn: Vollbild
   logo: Niederlassung von State Grid East China
   title: Visuelle Analyseplattform für Stromversorgungssysteme
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Status der Haushaltsausführung (10.000 Yuan)
+  title-2: Betriebs- und Wartungskosten in diesem Monat (10.000 Yuan)
+  title-3: Verfügbarkeit
 not-found: Seite nicht gefunden
+power-grid-construction:
+  title-1: 500-KV-Leitungslänge (km)
+  title-2: 500-KV-Transformatorleistung (10.000 Voltampere)
+  title-3: Abgeschlossener Status der Anlageinvestition
+sales-of-electricity-and-line-loss:
+  desc-1: Netzwerkverlustrate
+  desc-2: Wachstumsrate
+  title-1: State Grid plant, in diesem Jahr Strom in Ostchina zu verkaufen
+  title-2: Stromverkäufe im gesamten Netz in diesem Monat
+  title-3: Verlustrate der gesamten Netzwerkleitung
+  unit-1: Tausende Kilowattstunden
+shanghai: Shanghai
 social-condition:
   first-industry: Grundstoffindustrie
   second-industry: Sekundärindustrie
@@ -22,3 +60,4 @@ social-condition:
   title-2: Mittel- und langfristige Bankkredite (100 Millionen Yuan)
   title-3: Stromverbrauch (10.000 Kilowattstunden)
   title-4: Bruttoinlandsprodukt
+zhejiang: Zhejiang

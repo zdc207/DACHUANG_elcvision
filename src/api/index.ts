@@ -6,11 +6,17 @@
  * @FilePath: \power-system-visualization\src\api\index.ts
  * @Description:
  */
-import type { ISocialCondition } from '#/index'
+import type { IPowerGridConstruction, ISocialCondition } from '#/index'
 import appRequest from '~/utils/request'
 
 export function getSocialConditionAPI() {
   return appRequest.get<ISocialCondition>({
     url: '/api/social-contaion',
+  })
+}
+
+export function getPowerGridConstructionAPI() {
+  return appRequest.get<IPowerGridConstruction>({
+    url: '/api/power-grid-construction',
   })
 }

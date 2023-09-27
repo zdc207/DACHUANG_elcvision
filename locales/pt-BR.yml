@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Principais indicadores das operações da filial no Leste da China
 container:
   title-1: condições sociais
   title-2: Construção da rede elétrica
@@ -5,6 +7,25 @@ container:
   title-4: Melhoria de gestão
   title-5: Confiabilidade da rede
   title-6: Vendas de eletricidade e perda de linha
+electricity-usage:
+  desc-1: energia utilizada
+  desc-2: taxa de crescimento
+  title-1: >-
+    Consumo de eletricidade de toda a rede neste mês (bilhões de
+    quilowatts-hora)
+  title-2: Carga de eletricidade este ano (10.000 quilowatts-hora)
+  title-3: Consumo de eletricidade de toda a sociedade
+fujian: Fujian
+grid-reliability:
+  title-1: Número de viagens de linha de 1000KV este mês
+  title-2: Número de eventos de disparo de equipamentos do sistema 500KV
+  title-3: Tempos de viagem de 300 MW e acima
+  title-4: Disparo de equipamentos e unidades
+  title-5: Unidade desarmada
+  title-6: Ajuste de equipamento
+  unit-1: Segunda categoria
+  unit-2: ascender
+  unit-3: Número de Taiwan
 header:
   change-color-dark: Mudar para tema escuro
   change-color-light: Mudar para tema claro
@@ -13,7 +34,24 @@ header:
   fullscrenn: tela cheia
   logo: Filial da State Grid no Leste da China
   title: Plataforma de análise visual do sistema de energia
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Status de implementação do orçamento (10.000 yuans)
+  title-2: Despesas de operação e manutenção este mês (10.000 yuans)
+  title-3: disponibilidade
 not-found: página não encontrada
+power-grid-construction:
+  title-1: Comprimento da linha 500KV (km)
+  title-2: Potência do transformador de 500KV (10.000 volt-amperes)
+  title-3: Status concluído do investimento em ativos fixos
+sales-of-electricity-and-line-loss:
+  desc-1: Taxa de perda de rede
+  desc-2: taxa de crescimento
+  title-1: State Grid planeja vender eletricidade no leste da China este ano
+  title-2: Vendas de eletricidade em toda a rede este mês
+  title-3: Taxa de perda de linha em toda a rede
+  unit-1: Milhares de quilowatts-hora
+shanghai: Xangai
 social-condition:
   first-industry: indústria primária
   second-industry: Indústria secundária
@@ -22,3 +60,4 @@ social-condition:
   title-2: Empréstimos bancários de médio e longo prazo (100 milhões de yuans)
   title-3: Consumo de energia (10.000 quilowatts-hora)
   title-4: produto Interno Bruto
+zhejiang: Zhejiang

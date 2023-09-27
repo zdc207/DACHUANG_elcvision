@@ -1,3 +1,5 @@
+anhui: 안후이
+center-title: 화동지사 운영 주요 지표
 container:
   title-1: 세상
   title-2: 전력망 구축
@@ -5,6 +7,23 @@ container:
   title-4: 경영개선
   title-5: 그리드 신뢰성
   title-6: 전력판매 및 회선손실
+electricity-usage:
+  desc-1: 사용된 에너지
+  desc-2: 성장률
+  title-1: 이번 달 전체 네트워크의 전력 소비량(십억 킬로와트시)
+  title-2: 올해 전력부하(10,000kWh)
+  title-3: 사회 전체의 전력 소비
+fujian: 푸젠성
+grid-reliability:
+  title-1: 이번 달 1000KV 노선 운행 횟수
+  title-2: 500KV 시스템 장비의 트립 횟수
+  title-3: 300MW 이상의 운행 시간
+  title-4: 장비 및 장치 트립
+  title-5: 장치가 트립됨
+  title-6: 장비 조정
+  unit-1: 이류
+  unit-2: 증가
+  unit-3: 대만 번호
 header:
   change-color-dark: 어두운 테마로 전환
   change-color-light: 밝은 테마로 전환
@@ -13,7 +32,24 @@ header:
   fullscrenn: 전체 화면
   logo: State Grid 중국 동부 지점
   title: 전력계통 시각적 분석 플랫폼
+jiangsu: 장쑤성
+management-improvement:
+  title-1: 예산 집행 현황(10,000위안)
+  title-2: 이번달 운영유지비(10,000위안)
+  title-3: 유효성
 not-found: 페이지를 찾을 수 없습니다
+power-grid-construction:
+  title-1: 500KV 라인 길이(km)
+  title-2: 500KV 변압기 전력(10,000볼트암페어)
+  title-3: 고정자산투자 완료현황
+sales-of-electricity-and-line-loss:
+  desc-1: 네트워크 손실률
+  desc-2: 성장률
+  title-1: State Grid는 올해 중국 동부에서 전력을 판매할 계획입니다.
+  title-2: 이번 달 전체 네트워크의 전력 판매
+  title-3: 전체망 회선 손실률
+  unit-1: 수천 킬로와트시
+shanghai: 상하이
 social-condition:
   first-industry: 1차 산업
   second-industry: 2차산업
@@ -22,3 +58,4 @@ social-condition:
   title-2: 은행 중장기대출(1억위안)
   title-3: 소비전력(10,000kWh)
   title-4: 국내 총생산
+zhejiang: 저장성

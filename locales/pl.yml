@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Kluczowe wskaźniki działalności oddziałów w Chinach Wschodnich
 container:
   title-1: warunki socjalne
   title-2: Budowa sieci energetycznej
@@ -5,6 +7,25 @@ container:
   title-4: Doskonalenie zarządzania
   title-5: Niezawodność sieci
   title-6: Sprzedaż energii elektrycznej i straty w liniach
+electricity-usage:
+  desc-1: zużyta energia
+  desc-2: tempo wzrostu
+  title-1: >-
+    Zużycie energii elektrycznej w całej sieci w tym miesiącu (w miliardach
+    kilowatogodzin)
+  title-2: Obciążenie energią elektryczną w tym roku (10 000 kilowatogodzin)
+  title-3: Zużycie energii elektrycznej przez całe społeczeństwo
+fujian: Fujian
+grid-reliability:
+  title-1: Liczba wyłączeń linii 1000KV w tym miesiącu
+  title-2: Liczba zdarzeń wyłączających urządzenia systemu 500KV
+  title-3: Czasy wyzwalania 300 MW i większe
+  title-4: Zadziałanie sprzętu i jednostki
+  title-5: Urządzenie się wyłączyło
+  title-6: Regulacja sprzętu
+  unit-1: Drugorzędny
+  unit-2: wzrastać
+  unit-3: Numer Tajwanu
 header:
   change-color-dark: Przełącz na ciemny motyw
   change-color-light: Przełącz na jasny motyw
@@ -13,7 +34,26 @@ header:
   fullscrenn: pełny ekran
   logo: Oddział State Grid we wschodnich Chinach
   title: Platforma analizy wizualnej systemu elektroenergetycznego
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Stan wykonania budżetu (10 000 juanów)
+  title-2: Wydatki operacyjne i konserwacyjne w tym miesiącu (10 000 juanów)
+  title-3: dostępność
 not-found: Strona nie znaleziona
+power-grid-construction:
+  title-1: Długość linii 500KV (km)
+  title-2: Moc transformatora 500 KV (10 000 woltoamperów)
+  title-3: Zakończony status inwestycji w środki trwałe
+sales-of-electricity-and-line-loss:
+  desc-1: Wskaźnik strat sieciowych
+  desc-2: tempo wzrostu
+  title-1: >-
+    State Grid planuje w tym roku sprzedaż energii elektrycznej we wschodnich
+    Chinach
+  title-2: Sprzedaż energii elektrycznej w całej sieci w tym miesiącu
+  title-3: Współczynnik utraty linii w całej sieci
+  unit-1: Tysiące kilowatogodzin
+shanghai: Szanghaj
 social-condition:
   first-industry: przemysł pierwotny
   second-industry: Przemysł wtórny
@@ -22,3 +62,4 @@ social-condition:
   title-2: Bankowe pożyczki średnio- i długoterminowe (100 milionów juanów)
   title-3: Zużycie energii (10 000 kilowatogodzin)
   title-4: produkt krajowy brutto
+zhejiang: Zhejiang

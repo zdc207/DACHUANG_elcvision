@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-23 20:25:10
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-27 10:59:21
+ * @LastEditTime: 2023-09-27 16:51:51
  * @FilePath: \power-system-visualization\src\pages\social-condition\social-condition.vue
  * @Description:
 -->
@@ -21,6 +21,18 @@ loadData()
 async function loadData() {
   const res = await getSocialConditionAPI()
   data.value = res.data
+  setOptionsWithData(data.value)
+}
+
+useIntervalFn(async () => {
+  loadData()
+}, 5000)
+
+watch(locale, () => {
+  setOptionsWithData(data.value)
+})
+
+function setOptionsWithData(data: ISocialCondition) {
   setOptions({
     tooltip: {
       trigger: 'item',
@@ -36,8 +48,7 @@ async function loadData() {
         },
       },
       {
-        text: '50.58亿',
-        subtext: '+10.6%',
+        text: `${data?.increment?.reduce((pre, current) => (pre + current), 0).toFixed(2)}%`,
         left: 'center',
         top: 'center',
         textStyle: {
@@ -89,7 +100,7 @@ async function loadData() {
         data: [
           {
             name: t('social-condition.first-industry'),
-            value: data.value.industry[0],
+            value: data?.industry?.[0],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -112,7 +123,7 @@ async function loadData() {
           },
           {
             name: t('social-condition.second-industry'),
-            value: data.value.industry[1],
+            value: data?.industry?.[1],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -135,7 +146,7 @@ async function loadData() {
           },
           {
             name: t('social-condition.third-industry'),
-            value: data.value.industry[2],
+            value: data?.industry?.[2],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -162,298 +173,6 @@ async function loadData() {
     ],
   })
 }
-
-useIntervalFn(async () => {
-  const res = await getSocialConditionAPI()
-  data.value = res.data
-  setOptions({
-    tooltip: {
-      trigger: 'item',
-    },
-    title: [
-      {
-        text: t('social-condition.title-4'),
-        left: 'center',
-        top: '5%',
-        textStyle: {
-          fontSize: 12,
-          color: '#aed3dd',
-        },
-      },
-      {
-        text: '50.58亿',
-        subtext: '+10.6%',
-        left: 'center',
-        top: 'center',
-        textStyle: {
-          fontSize: 12,
-          color: '#aed3dd',
-        },
-        subtextStyle: {
-          fontSize: 12,
-          color: '#afcfdc',
-        },
-        itemGap: 0,
-      },
-    ],
-    legend: {
-      bottom: '0%',
-      textStyle: {
-        color: '#90acb9',
-        fontSize: '10px',
-      },
-      itemWidth: 10,
-      itemHeight: 10,
-      itemGap: 4,
-    },
-    series: [
-      {
-        name: t('social-condition.title-4'),
-        type: 'pie',
-        radius: ['30%', '50%'],
-        avoidLabelOverlap: false,
-        labelLine: {
-          show: true,
-          length: 6,
-          length2: 6,
-        },
-        label: {
-          color: '#afcfdc',
-          fontSize: 12,
-          overflow: 'break',
-          position: 'outside',
-          formatter: '{d} %',
-        },
-        emphasis: {
-          label: {
-            show: true,
-            fontSize: 10,
-            fontWeight: 'bold',
-          },
-        },
-        data: [
-          {
-            name: t('social-condition.first-industry'),
-            value: data.value.industry[0],
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#08d8d8', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#7affff', // 100% 处的颜色
-                  },
-                ],
-                false,
-              ),
-            },
-          },
-          {
-            name: t('social-condition.second-industry'),
-            value: data.value.industry[1],
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#fa53fa', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#e793f8', // 100% 处的颜色
-                  },
-                ],
-                false,
-              ),
-            },
-          },
-          {
-            name: t('social-condition.third-industry'),
-            value: data.value.industry[2],
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#7161fe', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#e388f2', // 100% 处的颜色
-                  },
-
-                ],
-                false,
-              ),
-            },
-          },
-        ],
-      },
-    ],
-  })
-}, 5000)
-
-watch(locale, () => {
-  setOptions({
-    tooltip: {
-      trigger: 'item',
-    },
-    title: [
-      {
-        text: t('social-condition.title-4'),
-        left: 'center',
-        top: '5%',
-        textStyle: {
-          fontSize: 12,
-          color: '#aed3dd',
-        },
-      },
-      {
-        text: '50.58亿',
-        subtext: '+10.6%',
-        left: 'center',
-        top: 'center',
-        textStyle: {
-          fontSize: 12,
-          color: '#aed3dd',
-        },
-        subtextStyle: {
-          fontSize: 12,
-          color: '#afcfdc',
-        },
-        itemGap: 0,
-      },
-    ],
-    legend: {
-      bottom: '0%',
-      textStyle: {
-        color: '#90acb9',
-        fontSize: '10px',
-      },
-      itemWidth: 10,
-      itemHeight: 10,
-      itemGap: 4,
-    },
-    series: [
-      {
-        name: t('social-condition.title-4'),
-        type: 'pie',
-        radius: ['30%', '50%'],
-        avoidLabelOverlap: false,
-        labelLine: {
-          show: true,
-          length: 6,
-          length2: 6,
-        },
-        label: {
-          color: '#afcfdc',
-          fontSize: 12,
-          overflow: 'break',
-          position: 'outside',
-          formatter: '{d} %',
-        },
-        emphasis: {
-          label: {
-            show: true,
-            fontSize: 10,
-            fontWeight: 'bold',
-          },
-        },
-        data: [
-          {
-            name: t('social-condition.first-industry'),
-            value: 10,
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#08d8d8', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#7affff', // 100% 处的颜色
-                  },
-                ],
-                false,
-              ),
-            },
-          },
-          {
-            name: t('social-condition.second-industry'),
-            value: 20,
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#fa53fa', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#e793f8', // 100% 处的颜色
-                  },
-                ],
-                false,
-              ),
-            },
-          },
-          {
-            name: t('social-condition.third-industry'),
-            value: 70,
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(
-                0,
-                1,
-                0,
-                0,
-                [
-                  {
-                    offset: 0,
-                    color: '#7161fe', // 0% 处的颜色
-                  },
-                  {
-                    offset: 1,
-                    color: '#e388f2', // 100% 处的颜色
-                  },
-
-                ],
-                false,
-              ),
-            },
-          },
-        ],
-      },
-
-    ],
-
-  })
-}, {
-  immediate: true,
-})
 </script>
 
 <template>
@@ -463,7 +182,7 @@ watch(locale, () => {
     <div class="center-y">
       <section-container v-if="data?.increment?.length > 0">
         <div class="between">
-          <div class="w-full text-left text-[--text-color]">
+          <div class="w-full text-left">
             <div class="between">
               <div>
                 <div v-ellipsis>

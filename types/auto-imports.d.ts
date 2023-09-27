@@ -41,6 +41,7 @@ declare global {
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getPowerGridConstructionAPI: typeof import('../src/api/index')['getPowerGridConstructionAPI']
   const getSocialConditionAPI: typeof import('../src/api/index')['getSocialConditionAPI']
   const h: typeof import('vue')['h']
   const i18n: typeof import('../src/modules/i18n')['default']
@@ -359,6 +360,7 @@ declare module 'vue' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly i18n: UnwrapRef<typeof import('../src/modules/i18n')['default']>
@@ -671,6 +673,7 @@ declare module '@vue/runtime-core' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly i18n: UnwrapRef<typeof import('../src/modules/i18n')['default']>

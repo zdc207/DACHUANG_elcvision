@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     MyContainer: typeof import('./../src/pages/my-container/my-container.vue')['default']
     MyHeader: typeof import('./../src/pages/my-header/my-header.vue')['default']
     Pages: typeof import('./../src/pages/index.vue')['default']
+    PowerGridConstruction: typeof import('./../src/pages/power-grid-construction/power-grid-construction.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SectionContainer: typeof import('./../src/components/section-container/section-container.vue')['default']

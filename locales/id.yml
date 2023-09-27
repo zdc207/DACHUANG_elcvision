@@ -1,3 +1,5 @@
+anhui: Anhui
+center-title: Indikator utama operasi cabang Tiongkok Timur
 container:
   title-1: kondisi sosial
   title-2: Konstruksi jaringan listrik
@@ -5,6 +7,23 @@ container:
   title-4: Perbaikan manajemen
   title-5: Keandalan jaringan
   title-6: Penjualan listrik dan kehilangan saluran
+electricity-usage:
+  desc-1: energi yang digunakan
+  desc-2: tingkat pertumbuhan
+  title-1: Konsumsi listrik seluruh jaringan bulan ini (miliar kilowatt jam)
+  title-2: Beban listrik tahun ini (10.000 kilowatt-jam)
+  title-3: Konsumsi listrik seluruh masyarakat
+fujian: Fujian
+grid-reliability:
+  title-1: Jumlah perjalanan jalur 1000KV bulan ini
+  title-2: Jumlah kejadian tersandung pada peralatan sistem 500KV
+  title-3: Waktu perjalanan 300MW ke atas
+  title-4: Peralatan dan unit tersandung
+  title-5: Unit tersandung
+  title-6: Penyesuaian peralatan
+  unit-1: Kelas dua
+  unit-2: bangkit
+  unit-3: nomor Taiwan
 header:
   change-color-dark: Beralih ke tema gelap
   change-color-light: Beralih ke tema terang
@@ -13,7 +32,24 @@ header:
   fullscrenn: layar penuh
   logo: Jaringan Negara Cabang Tiongkok Timur
   title: Platform analisis visual sistem tenaga
+jiangsu: Jiangsu
+management-improvement:
+  title-1: Status pelaksanaan anggaran (10.000 yuan)
+  title-2: Biaya pengoperasian dan pemeliharaan bulan ini (10.000 yuan)
+  title-3: ketersediaan
 not-found: halaman tidak ditemukan
+power-grid-construction:
+  title-1: Panjang jalur 500KV (km)
+  title-2: Daya trafo 500KV (10.000 volt-ampere)
+  title-3: Status investasi aset tetap telah selesai
+sales-of-electricity-and-line-loss:
+  desc-1: Tingkat kehilangan jaringan
+  desc-2: tingkat pertumbuhan
+  title-1: State Grid berencana menjual listrik di Tiongkok Timur tahun ini
+  title-2: Penjualan listrik di seluruh jaringan bulan ini
+  title-3: Tingkat kehilangan seluruh jalur jaringan
+  unit-1: Ribuan kilowatt jam
+shanghai: Shanghai
 social-condition:
   first-industry: industri utama
   second-industry: Industri sekunder
@@ -22,3 +58,4 @@ social-condition:
   title-2: Pinjaman bank jangka menengah dan panjang (100 juta yuan)
   title-3: Konsumsi daya (10.000 kilowatt-jam)
   title-4: produk domestik bruto
+zhejiang: Zhejiang

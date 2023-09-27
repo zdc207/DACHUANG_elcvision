@@ -1,3 +1,5 @@
+anhui: 安徽省
+center-title: 中国東部支店の運営に関する主要な指標
 container:
   title-1: 社会情勢
   title-2: 電力網の建設
@@ -5,6 +7,23 @@ container:
   title-4: 経営改善
   title-5: 系統の信頼性
   title-6: 売電と送電損失
+electricity-usage:
+  desc-1: 使用されるエネルギー
+  desc-2: 成長速度
+  title-1: 今月のネットワーク全体の電力消費量（10億キロワット時）
+  title-2: 今年の電力負荷（10,000キロワット時）
+  title-3: 社会全体の電力消費量
+fujian: 福建省
+grid-reliability:
+  title-1: 今月の 1000KV ライントリップ数
+  title-2: 500KVシステム機器のトリップ回数
+  title-3: 300MW以上のトリップタイム
+  title-4: 機器およびユニットのトリップ
+  title-5: ユニットがトリップした
+  title-6: 装備調整
+  unit-1: 二流
+  unit-2: 上昇
+  unit-3: 台湾番号
 header:
   change-color-dark: ダークテーマに切り替える
   change-color-light: ライトテーマに切り替える
@@ -13,7 +32,24 @@ header:
   fullscrenn: 全画面表示
   logo: ステートグリッド中国東部支社
   title: 電力システムビジュアル解析プラットフォーム
+jiangsu: 江蘇省
+management-improvement:
+  title-1: 予算執行状況（万元）
+  title-2: 今月の運営維持費（10,000元）
+  title-3: 可用性
 not-found: ページが見つかりません
+power-grid-construction:
+  title-1: 500KV線路長(km)
+  title-2: 500KV 変圧器電力 (10,000 ボルトアンペア)
+  title-3: 固定資産投資の完了状況
+sales-of-electricity-and-line-loss:
+  desc-1: ネットワーク損失率
+  desc-2: 成長速度
+  title-1: 国営電力網は今年、中国東部で電力を販売する計画
+  title-2: 今月のネットワーク全体の電力販売量
+  title-3: ネットワーク全体の回線損失率
+  unit-1: 数千キロワット時
+shanghai: 上海
 social-condition:
   first-industry: 第一次産業
   second-industry: 第二次産業
@@ -22,3 +58,4 @@ social-condition:
   title-2: 銀行中長期融資（1億元）
   title-3: 消費電力（10,000キロワット時）
   title-4: 国内総生産
+zhejiang: 浙江省
