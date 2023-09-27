@@ -1,3 +1,11 @@
+/*
+ * @Author: Leo l024983409@qq.com
+ * @Date: 2023-09-19 20:22:55
+ * @LastEditors: Leo l024983409@qq.com
+ * @LastEditTime: 2023-09-27 11:40:43
+ * @FilePath: \power-system-visualization\src\composables\dark.ts
+ * @Description:
+ */
 // these APIs are auto-imported from @vueuse/core
 export const isDark = useDark()
 export const preferredDark = usePreferredDark()

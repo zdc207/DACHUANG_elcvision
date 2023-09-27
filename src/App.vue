@@ -10,6 +10,9 @@
 import autofit from 'autofit.js'
 
 onMounted(() => {
+  if (!isDark.value)
+    toggleDark()
+
   autofit.init()
 })
 </script>
