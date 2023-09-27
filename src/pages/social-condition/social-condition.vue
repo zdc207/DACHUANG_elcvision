@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-23 20:25:10
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-25 13:32:19
+ * @LastEditTime: 2023-09-27 10:59:21
  * @FilePath: \power-system-visualization\src\pages\social-condition\social-condition.vue
  * @Description:
 -->
@@ -457,11 +457,11 @@ watch(locale, () => {
 </script>
 
 <template>
-  <div class="app">
+  <div v-if="data?.increment?.length > 0">
     <section-header index="1" :title="t('container.title-1')" />
 
     <div class="center-y">
-      <section-container>
+      <section-container v-if="data?.increment?.length > 0">
         <div class="between">
           <div class="w-full text-left text-[--text-color]">
             <div class="between">

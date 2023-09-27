@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-19 20:22:55
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-25 13:48:20
+ * @LastEditTime: 2023-09-27 10:37:52
  * @FilePath: \power-system-visualization\vite.config.ts
  * @Description:
  */
@@ -26,13 +26,20 @@ import WebfontDownload from 'vite-plugin-webfont-dl'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // mock
-import { viteMockServe } from 'vite-plugin-mock'
+// import { viteMockServe } from 'vite-plugin-mock'
+import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
 
 export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
       '#/': `${path.resolve(__dirname, 'types')}/`,
+      'timers': 'rollup-plugin-node-polyfills/polyfills/timers',
+    },
+  },
+  build: {
+    rollupOptions: {
+      plugins: [rollupNodePolyFill],
     },
   },
   css: {
@@ -123,9 +130,15 @@ export default defineConfig({
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
-    viteMockServe({
-      mockPath: 'mock',
-      prodEnabled: true,
-    }),
+    // viteMockServe({
+    //   mockPath: 'mock',
+    //   ignore: /^_/,
+    //   prodEnabled: true,
+    //   localEnabled: false,
+    //   injectCode: `
+    //   import { setupProdMockServer } from '../mock/_createProductionServer';
+    //      setupProdMockServer();
+    //   `,
+    // }),
   ],
 })
