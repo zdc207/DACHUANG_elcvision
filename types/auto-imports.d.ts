@@ -42,6 +42,7 @@ declare global {
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const getElectricityUsageAPI: typeof import('../src/api/index')['getElectricityUsageAPI']
+  const getGridReliabilityAPI: typeof import('../src/api/index')['getGridReliabilityAPI']
   const getManagementImprovementAPI: typeof import('../src/api/index')['getManagementImprovementAPI']
   const getPowerGridConstructionAPI: typeof import('../src/api/index')['getPowerGridConstructionAPI']
   const getSocialConditionAPI: typeof import('../src/api/index')['getSocialConditionAPI']
@@ -364,6 +365,7 @@ declare module 'vue' {
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly getElectricityUsageAPI: UnwrapRef<typeof import('../src/api/index')['getElectricityUsageAPI']>
+    readonly getGridReliabilityAPI: UnwrapRef<typeof import('../src/api/index')['getGridReliabilityAPI']>
     readonly getManagementImprovementAPI: UnwrapRef<typeof import('../src/api/index')['getManagementImprovementAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
@@ -680,6 +682,7 @@ declare module '@vue/runtime-core' {
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly getElectricityUsageAPI: UnwrapRef<typeof import('../src/api/index')['getElectricityUsageAPI']>
+    readonly getGridReliabilityAPI: UnwrapRef<typeof import('../src/api/index')['getGridReliabilityAPI']>
     readonly getManagementImprovementAPI: UnwrapRef<typeof import('../src/api/index')['getManagementImprovementAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>

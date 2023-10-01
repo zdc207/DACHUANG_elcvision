@@ -23,16 +23,8 @@ function generateRandomIntegersWithSum(sum: number) {
 export default [
   rest.get('/api/social-contaion', (req, res, ctx) => {
     return requestSuccess<ISocialCondition>(res, ctx, {
-      values: [
-        Mock.Random.integer(100000, 9999999),
-        Mock.Random.integer(100000, 9999999),
-        Mock.Random.integer(100000, 9999999),
-      ],
-      increment: [
-        Mock.Random.float(0, 10, 0, 2),
-        Mock.Random.float(0, 10, 0, 2),
-        Mock.Random.float(0, 10, 0, 2),
-      ],
+      values: Array.from({ length: 3 }).map(() => Mock.Random.integer(100000, 9999999)),
+      increment: Array.from({ length: 3 }).map(() => Mock.Random.float(0, 10, 0, 2)),
       industry: generateRandomIntegersWithSum(100),
     })
   }),

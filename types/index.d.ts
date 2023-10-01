@@ -35,3 +35,10 @@ export interface IManagementImprovement{
   increment:number[]
   data:number
 }
+
+export interface IGridReliability{
+  values:number[] 
+  data1:number[]
+  data2:number[]
+}
+
