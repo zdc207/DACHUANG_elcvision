@@ -2,11 +2,11 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-24 12:09:42
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-27 10:50:38
+ * @LastEditTime: 2023-09-28 16:21:11
  * @FilePath: \power-system-visualization\src\api\index.ts
  * @Description:
  */
-import type { IPowerGridConstruction, ISocialCondition } from '#/index'
+import type { IElectricityUsage, IPowerGridConstruction, ISocialCondition } from '#/index'
 import appRequest from '~/utils/request'
 
 export function getSocialConditionAPI() {
@@ -18,5 +18,11 @@ export function getSocialConditionAPI() {
 export function getPowerGridConstructionAPI() {
   return appRequest.get<IPowerGridConstruction>({
     url: '/api/power-grid-construction',
+  })
+}
+
+export function getElectricityUsageAPI() {
+  return appRequest.get<IElectricityUsage>({
+    url: '/api/electricity-usage',
   })
 }

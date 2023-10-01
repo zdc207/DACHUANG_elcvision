@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-23 20:25:10
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-27 16:51:51
+ * @LastEditTime: 2023-10-01 18:23:50
  * @FilePath: \power-system-visualization\src\pages\social-condition\social-condition.vue
  * @Description:
 -->
@@ -10,30 +10,17 @@
 import type { ISocialCondition } from '#/index'
 import echarts from '~/components/app-echart/config'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 
-const { options, setOptions } = useEcharts()
-
-const data = ref({} as ISocialCondition)
-
-loadData()
-
-async function loadData() {
-  const res = await getSocialConditionAPI()
-  data.value = res.data
-  setOptionsWithData(data.value)
-}
-
-useIntervalFn(async () => {
-  loadData()
-}, 5000)
-
-watch(locale, () => {
-  setOptionsWithData(data.value)
-})
-
-function setOptionsWithData(data: ISocialCondition) {
-  setOptions({
+const { data, options } = useLoadData<ISocialCondition>(getSocialConditionAPI, (res) => {
+  return {
+    grid: {
+      left: '0%',
+      right: '0%',
+      top: ' 0%',
+      bottom: '0%',
+      containLabel: true,
+    },
     tooltip: {
       trigger: 'item',
     },
@@ -41,18 +28,18 @@ function setOptionsWithData(data: ISocialCondition) {
       {
         text: t('social-condition.title-4'),
         left: 'center',
-        top: '5%',
+        top: '0',
         textStyle: {
           fontSize: 12,
           color: '#aed3dd',
         },
       },
       {
-        text: `${data?.increment?.reduce((pre, current) => (pre + current), 0).toFixed(2)}%`,
+        text: `${res?.increment?.reduce((pre, current) => (pre + current), 0).toFixed(2)}%`,
         left: 'center',
         top: 'center',
         textStyle: {
-          fontSize: 12,
+          fontSize: 14,
           color: '#aed3dd',
         },
         subtextStyle: {
@@ -66,10 +53,10 @@ function setOptionsWithData(data: ISocialCondition) {
       bottom: '0%',
       textStyle: {
         color: '#90acb9',
-        fontSize: '10px',
+        fontSize: '12px',
       },
-      itemWidth: 10,
-      itemHeight: 10,
+      itemWidth: 12,
+      itemHeight: 12,
       itemGap: 4,
     },
     series: [
@@ -100,7 +87,7 @@ function setOptionsWithData(data: ISocialCondition) {
         data: [
           {
             name: t('social-condition.first-industry'),
-            value: data?.industry?.[0],
+            value: res?.industry?.[0],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -123,7 +110,7 @@ function setOptionsWithData(data: ISocialCondition) {
           },
           {
             name: t('social-condition.second-industry'),
-            value: data?.industry?.[1],
+            value: res?.industry?.[1],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -146,7 +133,7 @@ function setOptionsWithData(data: ISocialCondition) {
           },
           {
             name: t('social-condition.third-industry'),
-            value: data?.industry?.[2],
+            value: res?.industry?.[2],
             itemStyle: {
               color: new echarts.graphic.LinearGradient(
                 0,
@@ -171,17 +158,16 @@ function setOptionsWithData(data: ISocialCondition) {
         ],
       },
     ],
-  })
-}
+  }
+})
 </script>
 
 <template>
-  <div v-if="data?.increment?.length > 0">
+  <div v-if="data && data?.increment?.length > 0" class="h-full flex flex-col">
     <section-header index="1" :title="t('container.title-1')" />
-
-    <div class="center-y">
+    <div class="h-full flex flex-1 py-4">
       <section-container v-if="data?.increment?.length > 0">
-        <div class="between">
+        <div class="h-full between">
           <div class="w-full text-left">
             <div class="between">
               <div>
@@ -213,8 +199,8 @@ function setOptionsWithData(data: ISocialCondition) {
           </div>
         </div>
       </section-container>
-      <div class="w-50% center">
-        <app-echart width="200px" height="180px" :options="options" />
+      <div class="h-full w-50% center">
+        <app-echart :options="options" width="250px" height="200px" />
       </div>
     </div>
   </div>

@@ -7,8 +7,6 @@ import echarts, { type ECOption } from './config'
 const props = withDefaults(defineProps<Props>(), {
   theme: null,
   loading: false,
-  width: '500px',
-  height: '400px',
 })
 
 defineOptions({
@@ -17,10 +15,10 @@ defineOptions({
 
 interface Props {
   options?: ECOption
-  width?: string // 必须指定容器的宽高，否则无法显示。（容器内图表会自动获取父元素宽高）
-  height?: string
   theme?: Object | string | null
   loading?: boolean // 受控
+  height: string
+  width: string
   onMouseover?: (...args: any[]) => void
   onMouseout?: (...args: any[]) => void
 }
@@ -64,12 +62,13 @@ function init() {
 
 // 窗口自适应并开启过渡动画
 function resize() {
+  console.log(11, '===')
   if (chartInstance.value)
     chartInstance.value.resize({ animation: { duration: 300 } })
 }
 
 // 自适应防抖优化
-const debouncedResize = useDebounceFn(resize, 500, { maxWait: 800 })
+const debouncedResize = useDebounceFn(resize, 0, { maxWait: 800 })
 
 // 对父组件暴露获取 ECharts 实例的方法，可直接通过实例调用原生函数
 defineExpose({

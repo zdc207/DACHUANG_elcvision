@@ -21,3 +21,10 @@ export interface IPowerGridConstruction{
   province:number[]
 }
 
+
+
+export interface IElectricityUsage{
+  values:number[]
+  increment:number[]
+  electricity:number[]
+}

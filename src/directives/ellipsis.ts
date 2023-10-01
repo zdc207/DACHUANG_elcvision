@@ -1,7 +1,7 @@
-import type { App, Directive, DirectiveBinding } from 'vue'
+import type { App, Directive } from 'vue'
 
 const ellipsisDirective: Directive = {
-  updated(el: Element, binding: DirectiveBinding<any>) {
+  updated(el: Element) {
     const ellipsisCcontainer = el.parentElement as HTMLDivElement
     const scrollingText = el as HTMLDivElement
 

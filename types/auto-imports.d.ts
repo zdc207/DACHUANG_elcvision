@@ -41,6 +41,7 @@ declare global {
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getElectricityUsageAPI: typeof import('../src/api/index')['getElectricityUsageAPI']
   const getPowerGridConstructionAPI: typeof import('../src/api/index')['getPowerGridConstructionAPI']
   const getSocialConditionAPI: typeof import('../src/api/index')['getSocialConditionAPI']
   const h: typeof import('vue')['h']
@@ -210,6 +211,7 @@ declare global {
   const useKeyModifier: typeof import('@vueuse/core')['useKeyModifier']
   const useLastChanged: typeof import('@vueuse/core')['useLastChanged']
   const useLink: typeof import('vue-router')['useLink']
+  const useLoadData: typeof import('../src/composables/loadData')['useLoadData']
   const useLocalStorage: typeof import('@vueuse/core')['useLocalStorage']
   const useMagicKeys: typeof import('@vueuse/core')['useMagicKeys']
   const useManualRefHistory: typeof import('@vueuse/core')['useManualRefHistory']
@@ -360,6 +362,7 @@ declare module 'vue' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getElectricityUsageAPI: UnwrapRef<typeof import('../src/api/index')['getElectricityUsageAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -529,6 +532,7 @@ declare module 'vue' {
     readonly useKeyModifier: UnwrapRef<typeof import('@vueuse/core')['useKeyModifier']>
     readonly useLastChanged: UnwrapRef<typeof import('@vueuse/core')['useLastChanged']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
+    readonly useLoadData: UnwrapRef<typeof import('../src/composables/loadData')['useLoadData']>
     readonly useLocalStorage: UnwrapRef<typeof import('@vueuse/core')['useLocalStorage']>
     readonly useMagicKeys: UnwrapRef<typeof import('@vueuse/core')['useMagicKeys']>
     readonly useManualRefHistory: UnwrapRef<typeof import('@vueuse/core')['useManualRefHistory']>
@@ -673,6 +677,7 @@ declare module '@vue/runtime-core' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getElectricityUsageAPI: UnwrapRef<typeof import('../src/api/index')['getElectricityUsageAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -842,6 +847,7 @@ declare module '@vue/runtime-core' {
     readonly useKeyModifier: UnwrapRef<typeof import('@vueuse/core')['useKeyModifier']>
     readonly useLastChanged: UnwrapRef<typeof import('@vueuse/core')['useLastChanged']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
+    readonly useLoadData: UnwrapRef<typeof import('../src/composables/loadData')['useLoadData']>
     readonly useLocalStorage: UnwrapRef<typeof import('@vueuse/core')['useLocalStorage']>
     readonly useMagicKeys: UnwrapRef<typeof import('@vueuse/core')['useMagicKeys']>
     readonly useManualRefHistory: UnwrapRef<typeof import('@vueuse/core')['useManualRefHistory']>

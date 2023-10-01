@@ -22,11 +22,7 @@ import Unocss from 'unocss/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 
-// element-plus
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-
 // mock
-// import { viteMockServe } from 'vite-plugin-mock'
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
 
 export default defineConfig({
@@ -40,13 +36,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       plugins: [rollupNodePolyFill],
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: '@use "~/styles/element/index.scss" as *;',
-      },
     },
   },
   plugins: [
@@ -90,7 +79,6 @@ export default defineConfig({
         'src/enums/**',
       ],
       vueTemplate: true,
-      resolvers: [ElementPlusResolver()],
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -99,9 +87,7 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/],
       dts: 'types/components.d.ts',
-      resolvers: [ElementPlusResolver({
-        importStyle: 'sass',
-      }), (componentName) => {
+      resolvers: [(componentName) => {
         if (componentName.startsWith('Dv'))
           return { name: componentName.slice(2), from: '@kjgl77/datav-vue3' }
       },
@@ -130,15 +116,5 @@ export default defineConfig({
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
-    // viteMockServe({
-    //   mockPath: 'mock',
-    //   ignore: /^_/,
-    //   prodEnabled: true,
-    //   localEnabled: false,
-    //   injectCode: `
-    //   import { setupProdMockServer } from '../mock/_createProductionServer';
-    //      setupProdMockServer();
-    //   `,
-    // }),
   ],
 })
