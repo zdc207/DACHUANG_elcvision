@@ -28,3 +28,10 @@ export interface IElectricityUsage{
   increment:number[]
   electricity:number[]
 }
+
+
+export interface IManagementImprovement{
+  values:number[] 
+  increment:number[]
+  data:number
+}

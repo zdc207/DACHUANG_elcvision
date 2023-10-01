@@ -72,7 +72,7 @@ const { data, options } = useLoadData(getElectricityUsageAPI, (res) => {
         type: 'bar',
         tooltip: {
           valueFormatter(value) {
-            return `${value as number} ml`
+            return `${value as number}`
           },
         },
         data: res.electricity,
@@ -95,7 +95,7 @@ const { data, options } = useLoadData(getElectricityUsageAPI, (res) => {
         yAxisIndex: 1,
         tooltip: {
           valueFormatter(value) {
-            return `${value as number} °C`
+            return `${value as number}`
           },
         },
         itemStyle: {

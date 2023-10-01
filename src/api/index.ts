@@ -6,7 +6,7 @@
  * @FilePath: \power-system-visualization\src\api\index.ts
  * @Description:
  */
-import type { IElectricityUsage, IPowerGridConstruction, ISocialCondition } from '#/index'
+import type { IElectricityUsage, IManagementImprovement, IPowerGridConstruction, ISocialCondition } from '#/index'
 import appRequest from '~/utils/request'
 
 export function getSocialConditionAPI() {
@@ -24,5 +24,11 @@ export function getPowerGridConstructionAPI() {
 export function getElectricityUsageAPI() {
   return appRequest.get<IElectricityUsage>({
     url: '/api/electricity-usage',
+  })
+}
+
+export function getManagementImprovementAPI() {
+  return appRequest.get<IManagementImprovement>({
+    url: '/api/management-improvement',
   })
 }

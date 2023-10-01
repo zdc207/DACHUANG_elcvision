@@ -23,8 +23,10 @@ defineOptions({
       <div class="col-span-6">
         2
       </div>
-      <div class="col-span-5">
-        3
+      <div class="grid col-span-5 grid-rows-3 h-full">
+        <management-improvement />
+        <grid-reliability />
+        <sales-of-electricity-and-line-loss />
       </div>
     </div>
   </dv-border-box12>
