@@ -7,7 +7,7 @@ const { t } = useI18n()
 const { options, setOptions } = useEcharts()
 
 onMounted(() => {
-  echarts.registerMap('CN', mapJson)
+  echarts.registerMap('CN', mapJson as any)
   setOptions({
     xAxis: { show: false },
     yAxis: { show: false },
