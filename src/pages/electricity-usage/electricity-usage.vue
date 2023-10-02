@@ -32,14 +32,6 @@ const { data, options } = useLoadData(getElectricityUsageAPI, (res) => {
         },
       },
     },
-    toolbox: {
-      feature: {
-        dataView: { show: true, readOnly: false },
-        magicType: { show: true, type: ['line', 'bar'] },
-        restore: { show: true },
-        saveAsImage: { show: true },
-      },
-    },
     legend: {
       show: false,
     },
