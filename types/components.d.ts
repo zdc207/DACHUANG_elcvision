@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     AppCountUp: typeof import('./../src/components/app-count-up/app-count-up.vue')['default']
     AppEchart: typeof import('./../src/components/app-echart/app-echart.vue')['default']
     AppLangSelect: typeof import('./../src/components/app-lang-select/app-lang-select.vue')['default']
+    CenterMap: typeof import('./../src/pages/center-map/center-map.vue')['default']
     DvBorderBox12: typeof import('@kjgl77/datav-vue3')['BorderBox12']
     DvFullScreenContainer: typeof import('@kjgl77/datav-vue3')['FullScreenContainer']
     ElectricityUsage: typeof import('./../src/pages/electricity-usage/electricity-usage.vue')['default']

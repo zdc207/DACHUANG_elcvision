@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-23 19:08:02
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-28 16:57:15
+ * @LastEditTime: 2023-10-02 10:58:27
  * @FilePath: \power-system-visualization\src\pages\my-container\my-container.vue
  * @Description:
 -->
@@ -13,7 +13,7 @@ defineOptions({
 </script>
 
 <template>
-  <dv-border-box12 :dur="5">
+  <dv-border-box12>
     <div class="grid grid-cols-16 h-full px-6 py-4">
       <div class="grid col-span-5 grid-rows-3 h-full">
         <social-condition />
@@ -21,7 +21,7 @@ defineOptions({
         <electricity-usage />
       </div>
       <div class="col-span-6">
-        2
+        <center-map />
       </div>
       <div class="grid col-span-5 grid-rows-3 h-full">
         <management-improvement />

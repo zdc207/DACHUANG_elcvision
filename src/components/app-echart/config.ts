@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-21 18:57:04
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-10-01 19:14:40
+ * @LastEditTime: 2023-10-02 11:24:31
  * @FilePath: \power-system-visualization\src\components\app-echart\config.ts
  * @Description:
  */
@@ -15,6 +15,8 @@ import {
   BarChart,
   PieChart,
   GaugeChart,
+  MapChart,
+  type MapSeriesOption,
   type GaugeSeriesOption,
   type PieSeriesOption,
   type BarSeriesOption,
@@ -54,7 +56,7 @@ export type ECOption = ComposeOption<
     | TooltipComponentOption
     | LegendComponentOption
     | BarSeriesOption
-    | DatasetComponentOption | PieSeriesOption | GaugeSeriesOption
+    | DatasetComponentOption | PieSeriesOption | GaugeSeriesOption | MapSeriesOption
 >
 
 // 注册必须的组件
@@ -67,6 +69,7 @@ echarts.use([
   BarChart,
   LineChart,
   PieChart,
+  MapChart,
   GaugeChart,
   LabelLayout,
   CanvasRenderer,
