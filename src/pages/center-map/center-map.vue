@@ -32,11 +32,11 @@ onMounted(() => {
         emphasis: {
           label: { color: '#1cd8f5' },
           itemStyle: {
-            areaColor: '#0b2035',
+            areaColor: isDark.value ? '#0b2035' : '#5db5b2',
           },
         },
         itemStyle: {
-          areaColor: '#101d2c',
+          areaColor: isDark.value ? '#101d2c' : '5db5b2',
           borderColor: '#01c7e3',
         },
       },
@@ -44,14 +44,13 @@ onMounted(() => {
   })
 })
 
-watch(locale, () => {
+watch([locale, isDark], () => {
   const province = ([t('anhui'), t('fujian'), t('jiangsu'), t('zhejiang')])
-
   mapJson.features.forEach((item, index) => {
     item.properties.name = province[index]
   })
-  console.log('22')
   echarts.registerMap('CN', mapJson as any)
+
   setOptions({
     xAxis: { show: false },
     yAxis: { show: false },
@@ -65,18 +64,18 @@ watch(locale, () => {
         selectedMode: false,
         label: {
           show: true,
-          color: '#1cd8f5',
+          color: isDark.value ? '#1cd8f5' : '#fff',
           fontSize: 16,
         },
         emphasis: {
-          label: { color: '#1cd8f5' },
+          label: { color: isDark.value ? '#1cd8f5' : '#ddd' },
           itemStyle: {
-            areaColor: '#0b2035',
+            areaColor: isDark.value ? '#0b2035' : '#75d4d1',
           },
         },
         itemStyle: {
-          areaColor: '#101d2c',
-          borderColor: '#01c7e3',
+          areaColor: isDark.value ? '#101d2c' : '#5db5b2',
+          borderColor: isDark.value ? '#01c7e3' : '#fefefe',
         },
       },
     ],
@@ -96,7 +95,7 @@ watch(locale, () => {
           {{ t('center-title') }}
         </div>
       </div>
-      <dv-border-box12 :color="['#5893a6', '#ffda67']" background-color="#1c3b4b" class="my-4 h-full center flex-1">
+      <dv-border-box12 :color="['#5893a6', '#ffda67']" :background-color="isDark ? '#1c3b4b' : '#f9f9f9'" class="my-4 h-full center flex-1">
         <app-echart width="100%" height="100%" :options="options" />
       </dv-border-box12>
     </div>
