@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-24 16:03:06
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-27 19:57:56
+ * @LastEditTime: 2023-10-02 10:02:27
  * @FilePath: \power-system-visualization\types\index.d.ts
  * @Description: 
  */
@@ -41,4 +41,12 @@ export interface IGridReliability{
   data1:number[]
   data2:number[]
 }
+
+export interface ISalesOfElectricityAndLineLoss{
+  values:number[] 
+  increment:number[]
+  data1:number[]
+  data2:number[]
+}
+
 

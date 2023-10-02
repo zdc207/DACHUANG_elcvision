@@ -2,11 +2,11 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-24 12:09:42
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-09-28 16:21:11
+ * @LastEditTime: 2023-10-02 10:10:01
  * @FilePath: \power-system-visualization\src\api\index.ts
  * @Description:
  */
-import type { IElectricityUsage, IGridReliability, IManagementImprovement, IPowerGridConstruction, ISocialCondition } from '#/index'
+import type { IElectricityUsage, IGridReliability, IManagementImprovement, IPowerGridConstruction, ISalesOfElectricityAndLineLoss, ISocialCondition } from '#/index'
 import appRequest from '~/utils/request'
 
 export function getSocialConditionAPI() {
@@ -36,5 +36,11 @@ export function getManagementImprovementAPI() {
 export function getGridReliabilityAPI() {
   return appRequest.get<IGridReliability>({
     url: '/api/grid-reliability',
+  })
+}
+
+export function getSalesOfElectricityAndLineLossAPI() {
+  return appRequest.get<ISalesOfElectricityAndLineLoss>({
+    url: '/api/sales-of-electricity-and-line-loss',
   })
 }

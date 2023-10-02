@@ -1,11 +1,5 @@
-header:
-  change-color-dark: 切换成深色主题
-  change-color-light: 切换成浅色主题
-  change-language: 切换语言
-  exit-fullscreen: 退出全屏
-  fullscrenn: 全屏
-  logo: 国家电网华东分部
-  title: 电力系统可视化分析平台
+anhui: 安徽
+center-title: 华东分部运营关键指标
 container:
   title-1: 社会状况
   title-2: 电网建设
@@ -13,29 +7,13 @@ container:
   title-4: 管理提升
   title-5: 电网可靠性
   title-6: 售电及线损
-social-condition:
-  title-1: 铁路货物运输量(万吨)
-  title-2: 银行中长期贷款(亿元)
-  title-3: 耗电量(万千瓦时)
-  title-4: 国内生产总值
-  first-industry: 第一产业
-  second-industry: 第二产业
-  third-industry: 第三产业
-power-grid-construction:
-  title-1: 500KV线路长度(公里)
-  title-2: 500KV变电功率(万千伏安)
-  title-3: 固定资产投资完成情况
-
 electricity-usage:
+  desc-1: 用电量
+  desc-2: 增长率
   title-1: 本月全网用电量(亿千瓦时)
   title-2: 本年用电负荷(万千瓦时)
   title-3: 全社会用电量
-  desc-1: 用电量
-  desc-2: 增长率
-management-improvement:
-  title-1: 预算执行情况(万元)
-  title-2: 本月运维费用(万元)
-  title-3: 可用率
+fujian: 福建
 grid-reliability:
   title-1: 本月1000KV线路跳闸条次
   title-2: 500KV系统设备跳闸事件数
@@ -45,18 +23,38 @@ grid-reliability:
   title-6: 设备调整
   unit-1: 次
   unit-2: 起
-  unit-3: 台次 
+  unit-3: 台次
+header:
+  change-color-dark: 切换成深色主题
+  change-color-light: 切换成浅色主题
+  change-language: 切换语言
+  exit-fullscreen: 退出全屏
+  fullscrenn: 全屏
+  logo: 国家电网华东分部
+  title: 电力系统可视化分析平台
+jiangsu: 江苏
+management-improvement:
+  title-1: 预算执行情况(万元)
+  title-2: 本月运维费用(万元)
+  title-3: 可用率
+not-found: 未找到页面
+power-grid-construction:
+  title-1: 500KV线路长度(公里)
+  title-2: 500KV变电功率(万千伏安)
+  title-3: 固定资产投资完成情况
 sales-of-electricity-and-line-loss:
+  desc-1: 网损率
+  desc-2: 增长率
   title-1: 本年国网华东计划售电量
   title-2: 本月全网售电量
   title-3: 全网线损率
-  desc-1: 网损率
-  desc-2: 增长率
-  unit-1: 万千瓦时
-not-found: 未找到页面
 shanghai: 上海
-jiangsu: 江苏
+social-condition:
+  first-industry: 第一产业
+  second-industry: 第二产业
+  third-industry: 第三产业
+  title-1: 铁路货物运输量(万吨)
+  title-2: 银行中长期贷款(亿元)
+  title-3: 耗电量(万千瓦时)
+  title-4: 国内生产总值
 zhejiang: 浙江
-anhui: 安徽
-fujian: 福建
-center-title: 华东分部运营关键指标

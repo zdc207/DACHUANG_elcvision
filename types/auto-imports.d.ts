@@ -45,6 +45,7 @@ declare global {
   const getGridReliabilityAPI: typeof import('../src/api/index')['getGridReliabilityAPI']
   const getManagementImprovementAPI: typeof import('../src/api/index')['getManagementImprovementAPI']
   const getPowerGridConstructionAPI: typeof import('../src/api/index')['getPowerGridConstructionAPI']
+  const getSalesOfElectricityAndLineLossAPI: typeof import('../src/api/index')['getSalesOfElectricityAndLineLossAPI']
   const getSocialConditionAPI: typeof import('../src/api/index')['getSocialConditionAPI']
   const h: typeof import('vue')['h']
   const i18n: typeof import('../src/modules/i18n')['default']
@@ -368,6 +369,7 @@ declare module 'vue' {
     readonly getGridReliabilityAPI: UnwrapRef<typeof import('../src/api/index')['getGridReliabilityAPI']>
     readonly getManagementImprovementAPI: UnwrapRef<typeof import('../src/api/index')['getManagementImprovementAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
+    readonly getSalesOfElectricityAndLineLossAPI: UnwrapRef<typeof import('../src/api/index')['getSalesOfElectricityAndLineLossAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly i18n: UnwrapRef<typeof import('../src/modules/i18n')['default']>
@@ -685,6 +687,7 @@ declare module '@vue/runtime-core' {
     readonly getGridReliabilityAPI: UnwrapRef<typeof import('../src/api/index')['getGridReliabilityAPI']>
     readonly getManagementImprovementAPI: UnwrapRef<typeof import('../src/api/index')['getManagementImprovementAPI']>
     readonly getPowerGridConstructionAPI: UnwrapRef<typeof import('../src/api/index')['getPowerGridConstructionAPI']>
+    readonly getSalesOfElectricityAndLineLossAPI: UnwrapRef<typeof import('../src/api/index')['getSalesOfElectricityAndLineLossAPI']>
     readonly getSocialConditionAPI: UnwrapRef<typeof import('../src/api/index')['getSocialConditionAPI']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly i18n: UnwrapRef<typeof import('../src/modules/i18n')['default']>

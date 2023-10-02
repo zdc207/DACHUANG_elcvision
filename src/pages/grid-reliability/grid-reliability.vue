@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-28 12:30:08
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-10-01 20:56:32
+ * @LastEditTime: 2023-10-02 10:19:31
  * @FilePath: \power-system-visualization\src\pages\grid-reliability\grid-reliability.vue
  * @Description:
 -->
@@ -16,7 +16,7 @@ const { data, options } = useLoadData<IGridReliability>(getGridReliabilityAPI, (
     title: {
       text: t('grid-reliability.title-4'),
       textStyle: {
-        color: '#92b1bb',
+        color: '#aed3dd',
         fontSize: 12,
         width: 250,
         overflow: 'break',
@@ -103,7 +103,7 @@ const { data, options } = useLoadData<IGridReliability>(getGridReliabilityAPI, (
                 <div v-ellipsis>
                   {{ t("grid-reliability.title-1") }}
                 </div>
-                <div class="center-y text-lg">
+                <div class="center-y">
                   <app-count-up :count="data?.values?.[0]" />
                   <div>{{ t("grid-reliability.unit-1") }}</div>
                 </div>
@@ -114,7 +114,7 @@ const { data, options } = useLoadData<IGridReliability>(getGridReliabilityAPI, (
                 <div v-ellipsis>
                   {{ t("grid-reliability.title-2") }}
                 </div>
-                <div class="center-y text-lg">
+                <div class="center-y">
                   <app-count-up :count="data?.values?.[1]" />
                   <div>{{ t("grid-reliability.unit-2") }}</div>
                 </div>
@@ -125,7 +125,7 @@ const { data, options } = useLoadData<IGridReliability>(getGridReliabilityAPI, (
                 <div v-ellipsis>
                   {{ t("grid-reliability.title-3") }}
                 </div>
-                <div class="center-y text-lg">
+                <div class="center-y">
                   <app-count-up :count="data?.values?.[2]" />
                   <div>{{ t("grid-reliability.unit-3") }}</div>
                 </div>

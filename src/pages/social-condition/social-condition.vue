@@ -163,10 +163,10 @@ const { data, options } = useLoadData<ISocialCondition>(getSocialConditionAPI, (
 </script>
 
 <template>
-  <div v-if="data && data?.increment?.length > 0" class="h-full flex flex-col">
+  <div v-if="data" class="h-full flex flex-col">
     <section-header index="1" :title="t('container.title-1')" />
     <div class="h-full flex flex-1 py-4">
-      <section-container v-if="data?.increment?.length > 0">
+      <section-container>
         <div class="h-full between">
           <div class="w-full text-left">
             <div class="between">
