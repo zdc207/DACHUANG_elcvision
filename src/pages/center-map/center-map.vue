@@ -2,11 +2,55 @@
 import echarts from '~/components/app-echart/config'
 import mapJson from '~/assets/data/china.json'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const { options, setOptions } = useEcharts()
 
 onMounted(() => {
+  const province = ([t('anhui'), t('fujian'), t('jiangsu'), t('zhejiang')])
+  mapJson.features.forEach((item, index) => {
+    item.properties.name = province[index]
+  })
+  echarts.registerMap('CN', mapJson as any)
+
+  setOptions({
+    xAxis: { show: false },
+    yAxis: { show: false },
+    series: [
+      {
+        type: 'map',
+        map: 'CN',
+        roam: false,
+        aspectScale: 1,
+        zoom: 1.2,
+        selectedMode: false,
+        label: {
+          show: true,
+          color: '#1cd8f5',
+          fontSize: 16,
+        },
+        emphasis: {
+          label: { color: '#1cd8f5' },
+          itemStyle: {
+            areaColor: '#0b2035',
+          },
+        },
+        itemStyle: {
+          areaColor: '#101d2c',
+          borderColor: '#01c7e3',
+        },
+      },
+    ],
+  })
+})
+
+watch(locale, () => {
+  const province = ([t('anhui'), t('fujian'), t('jiangsu'), t('zhejiang')])
+
+  mapJson.features.forEach((item, index) => {
+    item.properties.name = province[index]
+  })
+  console.log('22')
   echarts.registerMap('CN', mapJson as any)
   setOptions({
     xAxis: { show: false },
@@ -33,13 +77,6 @@ onMounted(() => {
         itemStyle: {
           areaColor: '#101d2c',
           borderColor: '#01c7e3',
-          // emphasis: {
-          //   label: { color: '#1cd8f5' },
-          //   areaColor: '#0b2035',
-          // },
-          // select: {
-          //   disabled: false,
-          // },
         },
       },
     ],

@@ -2,7 +2,7 @@
  * @Author: Leo l024983409@qq.com
  * @Date: 2023-09-21 18:57:04
  * @LastEditors: Leo l024983409@qq.com
- * @LastEditTime: 2023-10-02 11:24:31
+ * @LastEditTime: 2023-10-02 12:55:35
  * @FilePath: \power-system-visualization\src\components\app-echart\config.ts
  * @Description:
  */
@@ -33,6 +33,8 @@ import {
   LegendComponent,
   DatasetComponent,
   TransformComponent,
+  ToolboxComponent,
+  type ToolboxComponentOption,
   type TooltipComponentOption,
   type TitleComponentOption,
   type GridComponentOption,
@@ -56,7 +58,7 @@ export type ECOption = ComposeOption<
     | TooltipComponentOption
     | LegendComponentOption
     | BarSeriesOption
-    | DatasetComponentOption | PieSeriesOption | GaugeSeriesOption | MapSeriesOption
+    | DatasetComponentOption | PieSeriesOption | GaugeSeriesOption | MapSeriesOption | ToolboxComponentOption
 >
 
 // 注册必须的组件
@@ -66,6 +68,7 @@ echarts.use([
   GridComponent,
   DatasetComponent,
   TransformComponent,
+  ToolboxComponent,
   BarChart,
   LineChart,
   PieChart,
