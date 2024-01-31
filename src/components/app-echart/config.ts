@@ -46,7 +46,7 @@ import {
 import { LabelLayout, UniversalTransition } from 'echarts/features'
 
 // 引入 Canvas 渲染器，必须
-import { CanvasRenderer } from 'echarts/renderers'
+import { SVGRenderer } from 'echarts/renderers'
 
 import type { ComposeOption } from 'echarts/core'
 
@@ -75,7 +75,7 @@ echarts.use([
   MapChart,
   GaugeChart,
   LabelLayout,
-  CanvasRenderer,
+  SVGRenderer,
   LegendComponent,
   UniversalTransition,
 ])
